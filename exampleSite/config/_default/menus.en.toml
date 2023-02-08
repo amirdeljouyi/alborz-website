@@ -5,12 +5,12 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "Blog"
+name = "Events"
 url = "blog/"
 weight = 2
 
 [[main]]
-name = "Pricing"
+name = "Members"
 url = "pricing/"
 weight = 3
 
