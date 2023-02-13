@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+{{ partial "page-header.html" . }}
+<section class="section">
+  <div class="container">
+    <div class="row gy-5">
+    {{ range .Data.Pages }}
+      <div class="col-xl-3 col-lg-4">
+        <div class="card bg-transparent border-0 text-center">
+
+          {{ if .Params.image }}
+          <img src="{{ .Params.image |relURL }}" alt="{{ .Params.Name }}" class="card-img-top rounded-2" style="object-fit: cover" width="360" height="380">
+          {{ end }}
+          <div class="card-body px-0">
+            <h3 class="h4 mb-1">{{ .Params.Name }}</h3>
+            <p class="mb-0">{{ .Params.Role }}</p>
+
+            <ul class="list-inline social-icons-alt mb-0 mt-2" style="margin-left:-7px">
+              {{ if .Params.facebook }}
+              <li class="list-inline-item me-0"><a class="p-2" href="{{ .Params.Facebook }}" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+              {{ end }}
+              {{ if .Params.twitter }}
+              <li class="list-inline-item me-0"><a class="p-2" href="{{ .Params.Twitter }}" title="Twitter"><i class="fab fa-twitter"></i></a></li>
+              {{ end }}
+              {{ if .Params.linkedin }}
+              <li class="list-inline-item me-0"><a class="p-2" href="{{ .Params.Linkedin }}" title="Linkedin"><i class="fab fa-linkedin"></i></a></li>
+              {{ end }}
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      {{ end }}
+
+    </div>
+  </div>
+</section>
+
+{{ end }}

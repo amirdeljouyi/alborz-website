@@ -1,0 +1,16 @@
+---
+label: Member
+hide_body: false
+fields:
+- type: text
+  name: name
+  label: name
+- type: file
+  name: image
+  label: image
+- type: text
+  name: role
+  label: role
+- type: url
+  name: linkedin
+  label: linkedin

@@ -21,3 +21,6 @@ other = "Your Message"
 
 [sendnow]
 other = "Send Now"
+
+[register]
+other = "Register"

@@ -2,7 +2,7 @@
 
 {{ partial "page-header.html" . }}
 
-<!-- checking blog -->
+<!-- checking events -->
 {{ if or (or (eq .Section "post") (eq .Section "blog") (eq .Type site.Params.blogCategoryType)) (or (eq .Section "categories") (eq .Section "tags") )}}
 
 <section class="section">

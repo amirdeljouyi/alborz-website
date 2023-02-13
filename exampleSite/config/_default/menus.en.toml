@@ -6,12 +6,12 @@ weight = 1
 
 [[main]]
 name = "Events"
-url = "blog/"
+url = "events/"
 weight = 2
 
 [[main]]
-name = "Members"
-url = "pricing/"
+name = "Board"
+url = "members/"
 weight = 3
 
 [[main]]
@@ -26,29 +26,18 @@ weight = 5
 
 # footer menu left
 [[footer_left]]
-name = "About Us"
+name = "Contact"
 url = "#"
 
-[[footer_left]]
-name = "Quick Start"
-url = "#"
 
 [[footer_left]]
-name = "Pricing"
-url = "pricing/"
+name = "Board"
+url = "members/"
 
 
 # footer menu middle
 [[footer_middle]]
-name = "Pricing"
-url = "pricing/"
-
-[[footer_middle]]
-name = "Platform"
-url = "#"
-
-[[footer_middle]]
-name = "Features"
+name = "Upcoming Events"
 url = "#"
 
 # footer menu right
