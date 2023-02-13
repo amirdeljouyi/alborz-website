@@ -7,9 +7,6 @@ url = "events/"
 [[footer_middle]]
 name = "Members"
 url = "members/"
-[[footer_middle]]
-name = "Platform"
-url = "#"
 [[footer_right]]
 name = "Privacy Policy"
 url = "privacy-policy/"
