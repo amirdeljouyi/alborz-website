@@ -2,19 +2,13 @@
 name = "About Us"
 url = "#"
 [[footer_left]]
-name = "Quick Start"
-url = "#"
-[[footer_left]]
-name = "Pricing"
-url = "pricing/"
+name = "Events"
+url = "events/"
 [[footer_middle]]
 name = "Members"
 url = "members/"
 [[footer_middle]]
 name = "Platform"
-url = "#"
-[[footer_middle]]
-name = "Features"
 url = "#"
 [[footer_right]]
 name = "Privacy Policy"
