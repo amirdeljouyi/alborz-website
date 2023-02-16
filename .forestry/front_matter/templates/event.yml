@@ -6,8 +6,11 @@ fields:
   name: title
   label: title
 - type: datetime
-  name: date
-  label: date
+  name: start_date
+  label: start date
+- type: datetime
+  name: end_date
+  label: end date
 - type: file
   name: image
   label: image
@@ -21,3 +24,6 @@ fields:
 - type: url
   name: link
   label: link
+- type: text
+  name: location
+  label: location
