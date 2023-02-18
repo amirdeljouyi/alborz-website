@@ -26,29 +26,30 @@ weight = 5
 
 # footer menu left
 [[footer_left]]
-name = "Contact"
-url = "#"
-
-
-[[footer_left]]
 name = "Board"
 url = "members/"
 
 
 # footer menu middle
-[[footer_middle]]
-name = "Upcoming Events"
-url = "#"
+[[footer_left]]
+name = "Events"
+url = "events"
 
 # footer menu right
-[[footer_right]]
+[[footer_middle]]
 name = "Privacy Policy"
 url = "privacy-policy/"
 
-[[footer_right]]
+[[footer_middle]]
 name = "Terms & Conditions"
 url = "terms-conditions/"
 
-[[footer_right]]
+[[footer_middle]]
 name = "FAQ"
 url = "faq/"
+
+[[footer_right]]
+name = "Email: alborzdelft@gmail.com"
+
+[[footer_right]]
+name = "Kanaalweg 4, 2628 EB Delft"

@@ -5,9 +5,9 @@ title = "Alborz Association"
 contentDir = "content/english" # content/english
 weight = 1
 ########### footer content ##########
-footer_menu_left = "About us"
-footer_menu_middle = "Events"
-footer_menu_right = "Support"
+footer_menu_left = "Association"
+footer_menu_middle = "Support"
+footer_menu_right = "Contact"
 footer_content = "Delft Iranian Student Association"
 # copyright
-copyright = "Alborz Association"
+copyright = "D.I.S.A. Alborz Association"

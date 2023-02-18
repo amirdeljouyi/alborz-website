@@ -3,7 +3,7 @@ logo = "images/logo.png"
 logo_width = "100px"
 # OpenGraph / Twitter Card metadata
 description = "This is meta description"
-author = "Alborz association"
+author = "D.I.S.A. Alborz association"
 image = "images/logo.png" # this image will be used as fallback if a page has no image of its own
 # contact form action
 contact_form_action = "#" # contact form works with https://formspree.io
