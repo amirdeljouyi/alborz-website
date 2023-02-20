@@ -30,22 +30,22 @@ content = "This site uses cookies. By continuing to use this website, you agree 
 button = "I Accept"
   
 ############################# social site ########################
-[[social]]
-title = "facebook"
-icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
-link = "#"
+#[[social]]
+#title = "facebook"
+#icon = "fab fa-facebook" # themify icon : https://themify.me/themify-icons
+#link = "#"
 
 [[social]]
-title = "twitter"
-icon = "fab fa-twitter" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "instagram"
+icon = "fab fa-instagram" # themify icon : https://themify.me/themify-icons
+link = "https://www.instagram.com/alborzdelft/"
 
 [[social]]
-title = "skype"
-icon = "fab fa-skype" # themify icon : https://themify.me/themify-icons
-link = "#"
+title = "telegram"
+icon = "fab fa-telegram" # themify icon : https://themify.me/themify-icons
+link = "https://t.me/Alborzdelft"
 
 [[social]]
 title = "linkedin"
-icon = "fab fa-linkedin" # themify icon : https://themify.me/themify-icons
-link = "#"
+icon = "fab fa-linkedin"
+link = "https://www.linkedin.com/company/alborzdelft"

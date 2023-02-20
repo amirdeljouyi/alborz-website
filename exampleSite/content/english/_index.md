@@ -72,16 +72,6 @@ landing:
         label : "Check it out"
         link : "#"
 
-    # service item loop
-    - title : "Our mission"
-      images:
-      - "images/mission.svg"
-      content : "We aspire to connect the Iranian community with itself and the broader TU Delft community, through a wide range of activities and cultural/social events!"
-      button:
-        enable : false
-        label : "Check it out"
-        link : "#"
-        
 ################### Screenshot ########################
 screenshot:
   enable : false
