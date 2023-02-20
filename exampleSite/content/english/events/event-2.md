@@ -3,7 +3,7 @@ title: "Success on the Dutch Job Market"
 start_date: 2023-03-14T14:00:00+01:30
 end_date: 2023-03-14T17:00:00+01:30
 # post image
-image: "images/events/event-2.jpg"
+image: "images/events/event2.jpg"
 # post type (regular/featured)
 type: "regular"
 # meta description
