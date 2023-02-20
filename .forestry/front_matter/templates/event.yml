@@ -17,7 +17,6 @@ fields:
 - type: text
   name: type
   label: type
-  description: 'Available type: featured/regular'
 - type: text
   name: description
   label: meta description
@@ -27,3 +26,7 @@ fields:
 - type: text
   name: location
   label: location
+- type: text
+  name: event_type
+  label: event type
+  description: 'Available type: featured/regular'

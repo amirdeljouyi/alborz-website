@@ -13,6 +13,10 @@
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
                     <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.start_date | time.Format ":date_long" }} at {{ .Params.start_date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
                 </p>
+                  {{ if ge (.Params.end_date | time.AsTime) now }}
+                 <p><a href="{{ .Params.link }}" title="{{ i18n " register" }} - {{ .Title }}" class="btn
+                        btn-primary btn-sm">{{ i18n "register" }}</a></p>
+                {{ end }}
                 <div class="content">{{.Content}}</div>
 
                 <!-- comments -->
@@ -25,3 +29,4 @@
         </div>
     </div>
 </section>
+{{ end }}

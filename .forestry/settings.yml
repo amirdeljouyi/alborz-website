@@ -14,6 +14,8 @@ sections:
 - type: document
   path: exampleSite/content/english/events/_index.md
   label: Events
+- type: heading
+  label: Event
 - type: directory
   path: exampleSite/content/english/events
   label: Event
@@ -22,6 +24,7 @@ sections:
   exclude: _index.md
   templates:
   - event
+  layout: layouts/events/single.html
 - type: heading
   label: Others Page
 - type: document

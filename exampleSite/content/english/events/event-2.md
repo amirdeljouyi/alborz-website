@@ -4,8 +4,9 @@ start_date: 2023-03-14T14:00:00+01:30
 end_date: 2023-03-14T17:00:00+01:30
 # post image
 image: "images/events/event2.jpg"
+type: "event"
 # post type (regular/featured)
-type: "regular"
+event_type: "featured"
 # meta description
 description: "Are you looking for your next job in the Netherlands?"
 # post draft

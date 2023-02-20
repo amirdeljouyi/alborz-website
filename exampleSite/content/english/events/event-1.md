@@ -4,8 +4,9 @@ start_date: 2023-02-15T18:30:00+01:30
 end_date: 2023-02-15T20:00:00+01:30
 # post image
 image: "images/events/event1.jpg"
+type: "event"
 # post type (regular/featured)
-type: "featured"
+event_type: "featured"
 # meta description
 description: "How to manage stress and anxiety"
 # post draft
