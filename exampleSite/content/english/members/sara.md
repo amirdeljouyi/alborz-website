@@ -1,5 +1,5 @@
 ---
-name: "Sadaf Nadimi"
+name: "Sara Azizian"
 image: "images/members/Sara.jpg"
 role: "Logistics"
 draft: false
