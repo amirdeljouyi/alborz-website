@@ -5,7 +5,7 @@
         <h2 class="section-title mb-5 text-center">{{ .Params.events.title | markdownify }}</h2>
         <div class="row">
 
-            <div class="col-md-6 col-sm-6 mb-4 mb-md-0">
+            <div class="col-md-6 col-sm-6 order-1 order-md-2">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
                 {{ range first 4 $events.Pages.ByDate.Reverse }}
                 <div class="box-image-text d-flex align-items-center mb-3">
@@ -32,7 +32,7 @@
             </div>
 
 
-            <div class="col-md-6 order-1 order-md-2">
+            <div class="col-md-6 mb-4 mb-md-0">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
                 <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
                 {{ range first 4 $events.Pages }}
