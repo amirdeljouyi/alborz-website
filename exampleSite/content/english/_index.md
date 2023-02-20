@@ -74,10 +74,10 @@ landing:
     # service item loop
     - title : "Our mission"
       images:
-      - "images/service-1.png"
+      - "images/mission.svg"
       content : "We aspire to connect the Iranian community with itself and the broader TU Delft community, through a wide range of activities and cultural/social events!"
       button:
-        enable : true
+        enable : false
         label : "Check it out"
         link : "#"
         
