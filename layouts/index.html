@@ -29,17 +29,17 @@
     <div class="container">
         <div class="row justify-content-center">
 
-            <div class="col-md-6 col-sm-6">
+            <div class="col-md-6 col-sm-6 align-self-center">
 
                 <h2 class="section-title">{{ .title | markdownify }}</h2>
+                <ul>
+                    {{ range .feature_item }}
 
-                                    {{ range .feature_item }}
-                <dl class="row">
-  <dt class="col-sm-3">{{ .name | title }}</dt>
-  <dd class="col-sm-9">{{ .content | markdownify }}</dd>
-</dl>
+                    <!--  <dt class="col-sm-3">{{ .name | title }}</dt>-->
+                    <li class="col-sm-9 mb-2" style="font-size: 17px">{{ .content | markdownify }}</li>
+
                     {{ end }}
-
+                </ul>
             </div>
             <div class="col-md-6">
                 {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
