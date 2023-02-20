@@ -58,7 +58,7 @@ landing:
       - "images/who-are-we.svg"
       content : "The Iranian student association, D.I.S.A. Alborz, formerly known as I.S.S.T.U.D., aims to promote and expand the interests of students with an Iranian background and others with a connection to the TU Delft, or interests concerning Iran and Iranian cultures and history. We are a non- profit, non-religious and non-partisan association."
       button:
-        enable : true
+        enable : false
         label : "Check it out"
         link : "#"
         
