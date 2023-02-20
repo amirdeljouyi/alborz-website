@@ -5,7 +5,7 @@ banner:
   image : "images/banner-art.svg"
   content : "The D.I.S.A. Alborz is a student association of Iranians in Delft, run by students for the benefit of the growing Iranian community."
   button:
-    enable : true
+    enable : false
     label : "Contact Us"
     link : "contact/"
 
@@ -13,6 +13,7 @@ banner:
 feature:
   enable : true
   title : "Our goals"
+  image : "images/mission.svg"
   feature_item:
     # feature item loop
     - name : "Solid foundation"
@@ -27,7 +28,7 @@ feature:
     # feature item loop
     - name : "Mentoring"
       icon : "fas fa-user-clock"
-      content : "Providing support and mentorship for members, especially the newcomers"
+      content : "Providing support and mentorship for members"
       
     # feature item loop
     - name : "Development"
@@ -37,7 +38,7 @@ feature:
     # feature item loop
     - name : "Diversity & Inclusion"
       icon : "fas fa-magnet"
-      content : "Raising awareness for and supporting marginalized groups"
+      content : "Raising awareness and supporting marginalized groups"
       
 
 ######################### Events #####################
@@ -93,10 +94,8 @@ screenshot:
 call_to_action:
   enable : true
   title : "Ready to join us?"
-  image : "images/cta.svg"
-  content : "Become a member in D.I.S.A. Alborz."
   button:
     enable : true
-    label : "Join us"
+    label : Become a Member
     link : "https://form.jotform.com/230291977411356"
 ---
