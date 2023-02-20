@@ -1,0 +1,47 @@
+<!-- events -->
+
+<section class="section">
+    <div class="container">
+        <h2 class="section-title mb-5 text-center">{{ .Params.events.title | markdownify }}</h2>
+        <div class="row">
+
+            <div class="col-md-6 col-sm-6">
+                {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
+                {{ range first 4 $events.Pages }}
+                <div class="box-image-text d-flex align-items-center mb-3">
+                    <div class="flex-shrink-0">
+                        <div class="card text-center date calendar">
+                            <div class="card-header bg-light month">
+                                <span class="panel-title text-primary strong"> {{ substr (.Params.start_date | time.Format ":date_long") 0 3 }} </span>
+                            </div>
+                            <div class="card-body day text-primary">
+                                {{ (time .Params.start_date).Day }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1 ms-3">
+                        <h4 class="pl-4">
+                            {{ .Params.title }}
+                        </h4>
+                    </div>
+                </div>
+                {{ end }}
+                <div class="pt-3">
+                 <a href="events" title="Check Out All Events" class="btn-link">All Events<i class="fas fa-arrow-right"></i></a>
+                    </div>
+            </div>
+
+
+            <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
+                {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
+                <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
+                {{ range first 4 $events.Pages }}
+                    <div>
+                    {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid">{{ end }}
+                    <div class="text-center pt-2">{{(time .Params.start_date).Day}}/{{(printf "%d" (time .Params.start_date).Month)}} - {{ .Params.title }}</div>
+                        </div>
+                {{ end }}
+                    </div>
+            </div>
+    </div>
+</section>

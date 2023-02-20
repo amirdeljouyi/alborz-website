@@ -16,7 +16,7 @@ sections:
   label: Events
 - type: directory
   path: exampleSite/content/english/events
-  label: Events
+  label: Event
   create: documents
   match: "**/*"
   exclude: _index.md

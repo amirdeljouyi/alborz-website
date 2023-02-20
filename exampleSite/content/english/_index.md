@@ -40,40 +40,22 @@ feature:
       content : "Raising awareness for and supporting marginalized groups"
       
 
-      
+######################### Events #####################
+events:
+  enable : false
+  title : "Events" 
 
 
-######################### Service #####################
-service:
+######################### Landing Page #####################
+landing:
   enable : true
-  service_item:
-    # service item loop
-    - title : "D.I.S.A. Alborz"
-      images:
-      - "images/service-1.png"
-      - "images/service-2.png"
-      - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "#"
-        
-    # service item loop
-    - title : "Who are we?"
-      images:
-      - "images/service-1.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
-      button:
-        enable : true
-        label : "Check it out"
-        link : "#"
+  landing_item:
         
     # service item loop
     - title : "What is D.I.S.A. Alborz?"
       images:
       - "images/service-2.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      content : "The Iranian student association, D.I.S.A. Alborz, formerly known as I.S.S.T.U.D., aims to promote and expand the interests of students with an Iranian background and others with a connection to the TU Delft, or interests concerning Iran and Iranian cultures and history. We are a non- profit, non-religious and non-partisan association."
       button:
         enable : true
         label : "Check it out"
@@ -83,7 +65,17 @@ service:
     - title : "What do we do?"
       images:
       - "images/service-3.png"
-      content : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat. consectetur adipiscing elit. Consequat tristique eget amet, tempus eu at consecttur. Leo facilisi nunc viverra tellus. Ac laoreet sit vel consquat."
+      content : "We organize activities, events and conferences that cover a wide range of interests, with consideration for the physical, intellectual, emotional and spiritual wellbeing of our members. On top of all that, we celebrate ancient traditions of Iran as well, such as Yalda, Nowruz and many more!"
+      button:
+        enable : false
+        label : "Check it out"
+        link : "#"
+
+    # service item loop
+    - title : "Our mission"
+      images:
+      - "images/service-1.png"
+      content : "We aspire to connect the Iranian community with itself and the broader TU Delft community, through a wide range of activities and cultural/social events!"
       button:
         enable : true
         label : "Check it out"
@@ -91,7 +83,7 @@ service:
         
 ################### Screenshot ########################
 screenshot:
-  enable : true
+  enable : false
   title : "Experience the best <br> workflow with us"
   image : "images/screenshot.svg"
 

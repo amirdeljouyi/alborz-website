@@ -50,7 +50,7 @@
       {{ end }}
 
       <div class="container text-center pb-3">
-            <h1 class="display-3">Previous Events</h1>
+            <h1 class="display-3">Past Events</h1>
       </div>
 
       {{ $paginator := .Paginate  (.Data.Pages) }}
@@ -67,7 +67,7 @@
                       <p>
               <span><i class="fas  fa-map-marker" aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
               <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.start_date | time.Format ":date_long" }} at {{ .Params.start_date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
-            </p>
+                      </p>
           </div>
         </div>
       </div>
