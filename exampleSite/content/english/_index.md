@@ -55,7 +55,7 @@ landing:
     # service item loop
     - title : "What is D.I.S.A. Alborz?"
       images:
-      - "images/service-2.png"
+      - "images/who-are-we.svg"
       content : "The Iranian student association, D.I.S.A. Alborz, formerly known as I.S.S.T.U.D., aims to promote and expand the interests of students with an Iranian background and others with a connection to the TU Delft, or interests concerning Iran and Iranian cultures and history. We are a non- profit, non-religious and non-partisan association."
       button:
         enable : true
