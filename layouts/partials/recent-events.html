@@ -7,7 +7,7 @@
 
             <div class="col-md-6 col-sm-6">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
-                {{ range first 4 $events.Pages }}
+                {{ range first 4 $events.Pages.ByDate.Reverse }}
                 <div class="box-image-text d-flex align-items-center mb-3">
                     <div class="flex-shrink-0">
                         <div class="card text-center date calendar">
@@ -21,7 +21,7 @@
                     </div>
                     <div class="flex-grow-1 ms-3">
                         <h4 class="pl-4">
-                            {{ .Params.title }}
+                            <a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a>
                         </h4>
                     </div>
                 </div>
@@ -37,7 +37,7 @@
                 <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
                 {{ range first 4 $events.Pages }}
                     <div>
-                    {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid">{{ end }}
+                    {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid card-img">{{ end }}
                     <div class="text-center pt-2">{{(time .Params.start_date).Day}}/{{(printf "%d" (time .Params.start_date).Month)}} - {{ .Params.title }}</div>
                         </div>
                 {{ end }}

@@ -1,16 +1,18 @@
 ---
-title: "Career"
-start_date: 2023-02-25T18:30:00+01:30
-end_date: 2023-02-25T20:00:00+01:30
+title: "Success on the Dutch Job Market"
+start_date: 2023-03-14T14:00:00+01:30
+end_date: 2023-03-14T17:00:00+01:30
 # post image
-image: "images/events/event1.jpg"
+image: "images/events/event-2.jpg"
 # post type (regular/featured)
 type: "regular"
 # meta description
-description: "Career"
+description: "Are you looking for your next job in the Netherlands?"
 # post draft
 draft: false
 link: "https://docs.google.com/forms/d/1YQJAXBWspJIPd2Do70JAzAMeiFw_FujgKLaj779xHFA"
-location: "EEMCS, Hall G"
+location: "will be announced after registration"
 ---
-Career
+Are you looking for your next job in the Netherlands? If you want to save yourself a good amount of frustration and rejection, this is a workshop you should sign up for. D.I.S.A Alborz is going to host Mr Nima Sagharichiha, an expert career coach and trainer who will be delivering the on-campus and virtual, ‘Success on the Dutch Job Market.’
+
+Mr Sagharichiha is an expert career coach and trainer with a background in expat professional developments.  Students who sign up for his course will learn how to improve their CVs and take advantage of opportunities within the Dutch world of work. Register before 8 March!

@@ -1,0 +1,29 @@
+{{ define "main" }}
+
+{{ if (eq .Section "events") )}}
+<section class="section">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                {{ if .Params.image }}
+                <img src="{{ .Params.image | relURL }}" alt="{{ .Title }}" class="img-fluid w-100 rounded mb-4">
+                {{ end }}
+                <h2 class="mb-4">{{ .Title }}</h2>
+                <p>
+                    <span><i class="fas  fa-map-marker"
+                                     aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
+                    <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.start_date | time.Format ":date_long" }} at {{ .Params.start_date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
+                </p>
+                <div class="content">{{.Content}}</div>
+
+                <!-- comments -->
+                {{ if site.DisqusShortname }}
+                <div class="mt-5">
+                    {{ template "_internal/disqus.html" . }}
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
+{{end}}
