@@ -1,32 +1,4 @@
 ---
-label: Event
+label: 
 hide_body: false
-fields:
-- type: text
-  name: title
-  label: title
-- type: datetime
-  name: date
-  label: date
-- type: datetime
-  name: end_date
-  label: end date
-- type: file
-  name: image
-  label: image
-- type: text
-  name: type
-  label: type
-- type: text
-  name: description
-  label: meta description
-- type: url
-  name: link
-  label: link
-- type: text
-  name: location
-  label: location
-- type: text
-  name: event_type
-  label: event type
-  description: 'Available type: featured/regular'
+fields: []
