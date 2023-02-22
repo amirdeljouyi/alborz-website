@@ -3,7 +3,7 @@
 banner:
   title : "Delft Iranian Student Association - Alborz"
   image : "images/banner-art.svg"
-  content : "The D.I.S.A. Alborz is a student association of Iranians in Delft, run by students for the benefit of the growing Iranian community."
+  content : "The D.I.S.A. Alborz () is a student association of Iranians in Delft, run by students for the benefit of the growing Iranian community."
   button:
     enable : false
     label : "Contact Us"
