@@ -96,11 +96,37 @@ export default defineConfig({
         path: "content/english/members",
         fields: [
           {
-            type: "rich-text",
-            name: "body",
-            label: "Body of Document",
-            description: "This is the markdown body",
-            isBody: true,
+            name: "draft",
+            type: "boolean",
+            label: "Draft",
+            required: true,
+          },
+          {
+            name: "name",
+            type: "string",
+            label: "Name",
+            required: true,
+          },
+          {
+            name: "role",
+            type: "string",
+            label: "Role",
+            required: true,
+          },
+          {
+            name: "linkedin",
+            type: "string",
+            label: "Draft",
+          },
+          {
+            name: "weight",
+            type: "number",
+            label: "Weight",
+          },
+          {
+            name: "image",
+            type: "image",
+            label: "Image",
           },
         ],
       },
