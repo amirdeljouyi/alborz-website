@@ -7,17 +7,17 @@ sections:
 - type: heading
   label: Homepage
 - type: document
-  path: exampleSite/content/english/_index.md
+  path: content/english/_index.md
   label: Homepage
 - type: heading
   label: Events
 - type: document
-  path: exampleSite/content/english/events/_index.md
+  path: content/english/events/_index.md
   label: Events
 - type: heading
   label: Event
 - type: directory
-  path: exampleSite/content/english/events
+  path: content/english/events
   label: Event
   create: documents
   match: "**/*"
@@ -27,13 +27,13 @@ sections:
 - type: heading
   label: Others Page
 - type: document
-  path: exampleSite/content/english/contact/_index.md
+  path: content/english/contact/_index.md
   label: Contact
 - type: document
-  path: exampleSite/content/english/members/_index.md
+  path: content/english/members/_index.md
   label: members
 - type: directory
-  path: exampleSite/content/english/members
+  path: content/english/members
   label: members
   create: documents
   match: "**/*"
@@ -41,12 +41,12 @@ sections:
   templates:
   - member
 - type: document
-  path: exampleSite/content/english/faq/_index.md
+  path: content/english/faq/_index.md
   label: FAQ
 - type: heading
   label: All Pages
 - type: directory
-  path: exampleSite/content
+  path: content
   label: All Pages
   create: all
   match: "**/*"
@@ -56,21 +56,21 @@ sections:
 - type: heading
   label: Configuration
 - type: document
-  path: exampleSite/config/_default/config.toml
+  path: config/_default/config.toml
   label: Configuration
 - type: document
-  path: exampleSite/config/_default/params.toml
+  path: config/_default/params.toml
   label: Parameters
 - type: document
   path: config.toml
   label: Variables & Plugins
 - type: document
-  path: exampleSite/config/_default/languages.toml
+  path: config/_default/languages.toml
   label: Languages
 - type: document
-  path: exampleSite/config/_default/menus.en.toml
+  path: config/_default/menus.en.toml
   label: Menu (en)
-upload_dir: exampleSite/static/images
+upload_dir: static/images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false

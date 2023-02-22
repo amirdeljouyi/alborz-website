@@ -1,7 +1,6 @@
 ######################## default configuration ####################
-baseURL = "http://demo.gethugothemes.com/bigspring-light/examplesite/"
-title = "Bigspring Light"
-theme = "alborz-website"
+baseURL = "alborzdelft.nl"
+title = "Alborz Association"
 # post pagination
 paginate = "3"
 # post excerpt
