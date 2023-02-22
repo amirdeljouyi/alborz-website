@@ -38,10 +38,13 @@ export default defineConfig({
             required: true,
           },
           {
-            name: "date",
+            name: "start_date",
             type: "datetime",
-            label: "Date",
+            label: "Start Date",
             required: true,
+            ui: {
+              dateFormat: 'YYYY MM DD HH:mm'
+            }
           },
           {
             name: "end_date",
