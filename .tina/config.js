@@ -23,6 +23,11 @@ export default defineConfig({
         label: "Event",
         name: "event",
         path: "content/english/events",
+        defaultItem: () => {
+          return {
+            type: 'event'
+          }
+        },
         fields: [
           {
             name: "draft",
