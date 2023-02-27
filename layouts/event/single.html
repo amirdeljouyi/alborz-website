@@ -17,7 +17,7 @@
                  <p><a href="{{ .Params.link }}" title="{{ i18n " register" }} - {{ .Title }}" class="btn
                         btn-primary btn-sm">{{ i18n "register" }}</a></p>
                 {{ end }}
-                <div class="content">{{.Content}}</div>
+                <div {{if eq .Params.language "persian" }} class="fa-lang content" {{else}} class="content" {{end}}>{{.Content}}</div>
 
                 <!-- comments -->
                 {{ if site.DisqusShortname }}

@@ -78,6 +78,18 @@ export default defineConfig({
             }]
           },
           {
+            name: "lang",
+            type: "string",
+            label: "Language",
+            options: [{
+              value: "english",
+              label: "English"
+            }, {
+              value: "persian",
+              label: "Persian"
+            }]
+          },
+          {
             name: "link",
             type: "string",
             label: "Link",

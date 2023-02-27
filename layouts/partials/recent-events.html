@@ -7,7 +7,7 @@
 
             <div class="col-md-6 col-sm-6 order-1 order-md-2">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
-                {{ range first 4 $events.Pages.ByDate.Reverse }}
+                {{ range first 4 (($events.Pages.ByParam "start_date").Reverse)}}
                 <div class="box-image-text d-flex align-items-center mb-3">
                     <div class="flex-shrink-0">
                         <div class="card text-center date calendar">

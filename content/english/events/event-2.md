@@ -6,7 +6,7 @@ image: images/events/event2.jpg
 type: event
 event_type: featured
 description: Are you looking for your next job in the Netherlands?
-link: https://form.jotform.com/230516704907354
+link: "https://form.jotform.com/230516704907354"
 location: will be announced after registration
 
 ---
