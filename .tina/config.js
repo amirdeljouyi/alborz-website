@@ -92,7 +92,7 @@ export default defineConfig({
             }]
           },
           {
-            name: "lang",
+            name: "language",
             type: "string",
             label: "Language",
             options: [{
