@@ -1,8 +1,8 @@
 ---
 draft: false
 title: PubQuiz
-start_date: '2023-03-03T17:30:00.000Z'
-end_date: '2023-03-02T23:00:00.000Z'
+start_date: '2023-03-03T18:30:00.000Z'
+end_date: '2023-03-03T21:00:00.000Z'
 description: PubQuiz Night
 location: Bierfabriek
 event_type: regular

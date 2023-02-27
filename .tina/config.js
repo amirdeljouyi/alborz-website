@@ -71,6 +71,15 @@ export default defineConfig({
             label: "Location",
           },
           {
+            name: "type",
+            type: "string",
+            label: "Event",
+            options: [{
+              value: "event",
+              label: "Event"
+            }]
+          },
+          {
             name: "event_type",
             type: "string",
             label: "Event Type",
