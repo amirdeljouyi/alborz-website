@@ -51,6 +51,9 @@ export default defineConfig({
             type: "datetime",
             label: "End Date",
             required: true,
+            ui: {
+              dateFormat: 'YYYY MM DD HH:mm'
+            }
           },
           {
             name: "description",
@@ -75,9 +78,9 @@ export default defineConfig({
             }]
           },
           {
-            name: "url",
+            name: "link",
             type: "string",
-            label: "URL",
+            label: "Link",
           },
           {
             name: "image",
