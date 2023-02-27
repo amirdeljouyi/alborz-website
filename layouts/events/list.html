@@ -14,7 +14,7 @@
                     {{ end }}
                     <div class="col-md-6">
                         <h2><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h2>
-                        <p class="card-text">{{ .Summary }}</p>
+                        <p {{if eq .Params.language "persian" }} class="card-text  fa-lang" {{else}} class="card-text" {{end}}>{{ .Summary }}</p>
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
@@ -37,7 +37,7 @@
                     {{ end }}
                     <div class="card-body p-0">
                         <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h3>
-                        <p class="card-text">{{ .Summary }}</p>
+                        <p {{if eq .Params.language "persian" }} class="card-text  fa-lang" {{else}} class="card-text" {{end}}>{{ .Summary }}</p>
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
@@ -65,7 +65,7 @@
                     {{ end }}
                     <div class="card-body p-0">
                         <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h3>
-                        <p class="card-text">{{ .Summary }}</p>
+                        <p {{if eq .Params.language "persian" }} class="card-text  fa-lang" {{else}} class="card-text" {{end}}>{{ .Summary }}</p>
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
