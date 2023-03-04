@@ -13,5 +13,6 @@ description: "How to manage stress and anxiety"
 draft: false
 link: "https://docs.google.com/forms/d/1YQJAXBWspJIPd2Do70JAzAMeiFw_FujgKLaj779xHFA"
 location: "EEMCS, Hall G"
+language: english
 ---
 How to manage stress and anxiety
