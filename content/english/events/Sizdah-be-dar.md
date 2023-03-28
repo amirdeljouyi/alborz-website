@@ -7,6 +7,9 @@ location: Delftse Hout beach
 type: event
 event_type: regular
 language: english
+image: >-
+  https://assets.tina.io/aa546420-5fe0-4881-bdc7-6ee19e424121/images/events/2023-03-28
+  14.58.14.jpg
 ---
 
 If it doesn’t rain!
@@ -28,7 +31,3 @@ Note: Bring your own food, drinks, and snacks. 
 See you soon,
 
 Alborz association
-
-
-
-
