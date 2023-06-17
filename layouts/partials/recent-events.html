@@ -35,7 +35,7 @@
             <div class="col-md-6 mb-4 mb-md-0">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
                 <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
-                {{ range first 4 $events.Pages }}
+                {{ range first 4 (($events.Pages.ByParam "start_date").Reverse)}}
                     <div>
                     {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid card-img">{{ end }}
                     <div class="text-center pt-2">{{(time .Params.start_date).Day}}/{{(printf "%d" (time .Params.start_date).Month)}} - {{ .Params.title }}</div>
