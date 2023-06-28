@@ -15,14 +15,19 @@ url = "members/"
 weight = 3
 
 [[main]]
+name = "Status"
+url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?usp=sharing"
+weight = 4
+
+[[main]]
 name = "Contact"
 url = "contact/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "FAQ"
 url = "faq/"
-weight = 5
+weight = 6
 
 # footer menu left
 [[footer_left]]
