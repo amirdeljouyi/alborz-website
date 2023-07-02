@@ -2,7 +2,7 @@
 baseURL = "alborzdelft.nl"
 title = "Alborz Association"
 # post pagination
-paginate = "6"
+paginate = "7"
 # post excerpt
 summaryLength = "15"
 # disqus short name
