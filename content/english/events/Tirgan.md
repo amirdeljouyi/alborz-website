@@ -10,7 +10,7 @@ type: event
 event_type: featured
 language: english
 link: 'https://form.jotform.com/231704744827359'
-image: '/images/events/Tirgan.jpg'
+image: '/images/events/Tirgan.png'
 ---
 
 Join us in the vibrant celebration of Tirgan (Persian: تیرگان, Tirgān), an ancient Iranian festival held during mid-summer! Experience the joy of water splashing and lively dancing at Delftse Hout on July 8th. Get ready for an unforgettable day filled with exciting games, delicious food, refreshing drinks, enchanting music, and endless fun!
