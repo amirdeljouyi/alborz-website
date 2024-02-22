@@ -7,7 +7,7 @@ description: Nowruz - Persian New Year Eve
 location: HAL015 podium, Schieweg 15B, 2627 AN Delft
 event_type: regular
 link: 'https://www.eventbrite.com/e/nowruz-persian-new-year-celebration-tickets-841718531787'
-image: /images/events/Alborz-Norooz2024.png
+image: /images/events/Alborz-Norooz2024.jpg
 type: event
 language: english
 ---
