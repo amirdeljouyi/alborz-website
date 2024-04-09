@@ -1,7 +1,7 @@
 ---
 name: "Farzaneh Gholamianpour"
 image: "images/members/Farzaneh.jpg"
-role: "Secrateray"
+role: "Secretary"
 draft: false
 linkedin: "https://www.linkedin.com/in/farzaneh-gholamianpour/"
 weight: 4
