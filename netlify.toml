@@ -3,7 +3,7 @@ publish = "public"
 command = "yarn tinacms build && hugo"
 
 [build.environment]
-HUGO_VERSION = "0.110.0"
+HUGO_VERSION = "0.134.0"
 HUGO_BASEURL = "/"
 
 [[headers]]
