@@ -20,7 +20,7 @@
                 <div {{if eq .Params.language "persian" }} class="fa-lang content" {{else}} class="content" {{end}}>{{.Content}}</div>
 
                 <!-- comments -->
-                {{ if site.DisqusShortname }}
+                {{ if site.Config.Services.Disqus.Shortname }}
                 <div class="mt-5">
                     {{ template "_internal/disqus.html" . }}
                 </div>

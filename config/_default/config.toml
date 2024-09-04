@@ -5,8 +5,6 @@ title = "Alborz Association"
 paginate = "7"
 # post excerpt
 summaryLength = "15"
-# disqus short name
-disqusShortname = "" # get your shortname form here : https://disqus.com
 # google analytics
 googleAnalytics = "" # example : UA-123-45
 # unsafe html
@@ -15,3 +13,8 @@ unsafe = true
 
 [params]
 mainSections = ["events"]
+
+[services]
+  [services.disqus]
+  # disqus short name
+    shortname = ''
