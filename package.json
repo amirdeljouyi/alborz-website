@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/amirdeljouyi/alborz-website#readme",
   "dependencies": {
-    "@tinacms/cli": "^1.5.43",
-    "tinacms": "^1.6.1"
+    "@tinacms/cli": "^1.6.2",
+    "tinacms": "^2.2.2"
   }
 }
