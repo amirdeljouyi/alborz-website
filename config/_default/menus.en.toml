@@ -20,14 +20,30 @@ url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?us
 weight = 4
 
 [[main]]
+name = "Policy"
+weight = 5
+
+[[main]]
+name = "2022-2023"
+parent = "Policy"
+url = "https://drive.google.com/file/d/16UE9rlulg0Amdmg_xEBRX72wtPNFlikP/view?usp=sharing"
+weight = 2
+
+[[main]]
+name = "2023-2024"
+parent = "Policy"
+url = "https://drive.google.com/file/d/1avUxVeSgiNZQ5oEX9wnPKBGwj2asaRWh/view?usp=sharing"
+weight = 1
+
+[[main]]
 name = "Contact"
 url = "contact/"
-weight = 5
+weight = 6
 
 [[main]]
 name = "FAQ"
 url = "faq/"
-weight = 6
+weight = 7
 
 # footer menu left
 [[footer_left]]
