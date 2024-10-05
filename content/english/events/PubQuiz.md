@@ -5,7 +5,7 @@ start_date: '2023-03-03T18:30:00.000Z'
 end_date: '2023-03-03T21:00:00.000Z'
 description: PubQuiz Night
 location: Bierfabriek
-event_type: regular
+event_type: featured
 link: 'https://form.jotform.com/230543494105047'
 image: /images/events/My project-1 (12).png
 type: event

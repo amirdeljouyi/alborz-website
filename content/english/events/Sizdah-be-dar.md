@@ -5,7 +5,7 @@ start_date: '2023-04-02T11:00:00.000Z'
 end_date: '2023-04-02T15:00:00.000Z'
 location: Delftse Hout beach
 type: event
-event_type: regular
+event_type: featured
 language: english
 image: >-
   https://assets.tina.io/aa546420-5fe0-4881-bdc7-6ee19e424121/images/events/2023-03-28
