@@ -4,9 +4,6 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            <div class="col-12 mb-5 pb-5">
-                <iframe src="https://embed.styledcalendar.com/#WaVt0lw0UHzg0K4xCzXo" title="Styled Calendar" class="styled-calendar-container" style="width: 100%; border: none;" data-cy="calendar-embed-iframe"></iframe>
-            </div>
 
             {{ range  where (where .Data.Pages "Params.event_type" "featured") "Params.end_date" "ge" now }}
             <div class="col-12 mb-5 pb-5">
@@ -82,7 +79,5 @@
             {{ end }}
         </div>
 </section>
-
-<script async type="module" src="https://embed.styledcalendar.com/assets/parent-window.js"></script>
 
 {{ end }}
