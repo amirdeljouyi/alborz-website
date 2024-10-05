@@ -41,9 +41,14 @@ url = "contact/"
 weight = 6
 
 [[main]]
+name = "Calendar"
+url = "calendar/"
+weight = 7
+
+[[main]]
 name = "FAQ"
 url = "faq/"
-weight = 7
+weight = 8
 
 # footer menu left
 [[footer_left]]
@@ -55,6 +60,10 @@ url = "members/"
 [[footer_left]]
 name = "Events"
 url = "events"
+
+[[footer_left]]
+name = "Calendar"
+url = "calendar/"
 
 # footer menu right
 #[[footer_middle]]

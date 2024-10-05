@@ -4,6 +4,7 @@
 <section class="section">
     <div class="container">
         <div class="row">
+
             {{ range  where (where .Data.Pages "Params.event_type" "featured") "Params.end_date" "ge" now }}
             <div class="col-12 mb-5 pb-5">
                 <div class="row align-items-center">
