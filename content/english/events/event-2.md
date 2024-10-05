@@ -4,7 +4,7 @@ start_date: '2023-03-14T14:00:00.000Z'
 end_date: '2023-03-14T17:30:00.000Z'
 image: images/events/event2.jpg
 type: event
-event_type: regular
+event_type: featured
 description: Are you looking for your next job in the Netherlands?
 link: 'https://form.jotform.com/230516704907354'
 location: will be announced after registration

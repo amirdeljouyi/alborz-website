@@ -5,7 +5,7 @@ start_date: '2023-03-20T18:00:00.000Z'
 end_date: '2023-03-21T00:00:00.000Z'
 description: Nowruz - Persian New Year Eve
 location: HAL015 podium, Schieweg 15B, 2627 AN Delft
-event_type: regular
+event_type: featured
 link: 'https://form.jotform.com/230506991913358'
 image: /images/events/Alborz-Norooz.png
 type: event

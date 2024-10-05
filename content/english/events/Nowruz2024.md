@@ -5,13 +5,12 @@ start_date: '2024-03-19T18:00:00.000Z'
 end_date: '2024-03-19T00:00:00.000Z'
 description: Nowruz - Persian New Year Eve
 location: HAL015 podium, Schieweg 15B, 2627 AN Delft
-event_type: regular
+event_type: featured
 link: 'https://www.eventbrite.com/e/nowruz-persian-new-year-celebration-tickets-841718531787'
 image: /images/events/Alborz-Norooz2024.jpg
 type: event
 language: english
 ---
-# Nowruz Persian New Year Celebration
 
 **When:** 19 March 2024 from18:00-24:00
 
