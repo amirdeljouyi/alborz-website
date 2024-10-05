@@ -4,7 +4,7 @@
 <section class="section">
     <div class="container">
         <div class="row">
-            {{ $paginator := .Paginate (where .Data.Pages "Params.event_type" "featured") 3 }}
+            {{ $paginator := .Paginate (where .Data.Pages "Params.event_type" "featured") 6 }}
             {{ range $paginator.Pages }}
             {{ if ge (.Params.start_date | time.AsTime) now }}
 
