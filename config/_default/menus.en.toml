@@ -5,50 +5,69 @@ url = "/"
 weight = 1
 
 [[main]]
-name = "Events"
-url = "events/"
+name = "Association"
+identifier = "association"
 weight = 2
 
 [[main]]
-name = "Board"
-url = "members/"
-weight = 3
-
-[[main]]
-name = "Statutes"
-url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?usp=sharing"
-weight = 4
+name = "History"
+parent = "association"
+url = "history/"
+weight = 1
 
 [[main]]
 name = "Policy"
-weight = 5
-
-[[main]]
-name = "2022-2023"
-parent = "Policy"
-url = "https://drive.google.com/file/d/16UE9rlulg0Amdmg_xEBRX72wtPNFlikP/view?usp=sharing"
+identifier = "policy"
+parent = "association"
 weight = 2
+
+
 
 [[main]]
 name = "2023-2024"
-parent = "Policy"
+parent = "policy"
 url = "https://drive.google.com/file/d/1avUxVeSgiNZQ5oEX9wnPKBGwj2asaRWh/view?usp=sharing"
 weight = 1
 
 [[main]]
-name = "Contact"
-url = "contact/"
-weight = 6
+name = "2022-2023"
+parent = "policy"
+url = "https://drive.google.com/file/d/16UE9rlulg0Amdmg_xEBRX72wtPNFlikP/view?usp=sharing"
+weight = 2
+
+
+[[main]]
+name = "Statutes"
+parent = "association"
+url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?usp=sharing"
+weight = 3
+
+[[main]]
+name = "FAQ"
+parent = "association"
+url = "faq/"
+weight = 4
+
+[[main]]
+name = "Board"
+url = "members/"
+weight = 2
+
+[[main]]
+name = "Events"
+url = "events/"
+weight = 3
 
 [[main]]
 name = "Calendar"
 url = "calendar/"
-weight = 7
+weight = 4
 
 [[main]]
-name = "FAQ"
-url = "faq/"
-weight = 8
+name = "Contact"
+url = "contact/"
+weight = 5
+
 
 # footer menu left
 [[footer_left]]
