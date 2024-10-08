@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: Nowruz - Persian New Year Eve
 date: '2023-03-20T18:00:00.000Z'
 start_date: '2023-03-20T18:00:00.000Z'
