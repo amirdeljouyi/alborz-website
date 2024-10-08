@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Sizdah be-dar
+date: '2023-04-02T11:00:00.000Z'
 start_date: '2023-04-02T11:00:00.000Z'
 end_date: '2023-04-02T15:00:00.000Z'
 location: Delftse Hout beach

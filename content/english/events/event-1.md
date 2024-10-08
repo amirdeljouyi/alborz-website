@@ -1,5 +1,6 @@
 ---
 title: "Stress and Anxiety Management"
+date: 2023-02-15T18:30:00+01:30
 start_date: 2023-02-15T18:30:00+01:30
 end_date: 2023-02-15T20:00:00+01:30
 # post image

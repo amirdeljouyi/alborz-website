@@ -1,6 +1,7 @@
 ---
 draft: false
 title: Nowruz - Persian New Year Eve
+date: '2024-03-19T18:00:00.000Z'
 start_date: '2024-03-19T18:00:00.000Z'
 end_date: '2024-03-19T00:00:00.000Z'
 description: Nowruz - Persian New Year Eve

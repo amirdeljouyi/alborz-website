@@ -1,6 +1,7 @@
 ---
 draft: false
-title: Tirgan - Persian Summer Festival
+title: "Tirgan - Persian Summer Festival"
+date: '2023-07-08T16:30:00.000Z'
 start_date: '2023-07-08T16:30:00.000Z'
 end_date: '2023-07-08T22:30:00.000Z'
 description: >-

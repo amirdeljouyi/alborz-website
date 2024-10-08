@@ -1,6 +1,7 @@
 ---
 draft: false
 title: PubQuiz Night
+date: '2023-03-03T18:30:00.000Z'
 start_date: '2023-03-03T18:30:00.000Z'
 end_date: '2023-03-03T21:00:00.000Z'
 description: PubQuiz Night

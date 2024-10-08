@@ -16,12 +16,22 @@ url = "history/"
 weight = 1
 
 [[main]]
+name = "Statutes"
+parent = "association"
+url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?usp=sharing"
+weight = 2
+
+[[main]]
+name = "Bylaws"
+parent = "association"
+url = "https://drive.google.com/file/d/12Qr3D_vwmDXxdByfGlcI7HewQZNg3leb/view?usp=sharing"
+weight = 3
+
+[[main]]
 name = "Policy"
 identifier = "policy"
 parent = "association"
-weight = 2
-
-
+weight = 4
 
 [[main]]
 name = "2023-2024"
@@ -37,16 +47,10 @@ weight = 2
 
 
 [[main]]
-name = "Statutes"
-parent = "association"
-url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?usp=sharing"
-weight = 3
-
-[[main]]
 name = "FAQ"
 parent = "association"
 url = "faq/"
-weight = 4
+weight = 5
 
 [[main]]
 name = "Board"

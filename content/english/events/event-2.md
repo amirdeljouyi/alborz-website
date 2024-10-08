@@ -1,5 +1,6 @@
 ---
-title: Success on the Dutch Job Market
+title: "Success on the Dutch Job Market"
+date: '2023-03-14T14:00:00.000Z'
 start_date: '2023-03-14T14:00:00.000Z'
 end_date: '2023-03-14T17:30:00.000Z'
 image: images/events/event2.jpg
