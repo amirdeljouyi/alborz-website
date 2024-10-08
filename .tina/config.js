@@ -43,7 +43,7 @@ export default defineConfig({
             required: true,
           },
           {
-            name: "start_date",
+            name: "date",
             type: "datetime",
             label: "Start Date",
             required: true,
