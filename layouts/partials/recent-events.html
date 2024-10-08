@@ -7,15 +7,15 @@
 
             <div class="col-md-6 col-sm-6 order-1 order-md-2">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
-                {{ range first 4 (($events.Pages.ByParam "start_date").Reverse)}}
+                {{ range first 4 ($events.Pages.ByDate.Reverse)}}
                 <div class="box-image-text d-flex align-items-center mb-3">
                     <div class="flex-shrink-0">
                         <div class="card text-center date calendar">
                             <div class="card-header bg-light month">
-                                <span class="panel-title text-primary strong"> {{ substr (.Params.start_date | time.Format ":date_long") 0 3 }} </span>
+                                <span class="panel-title text-primary strong"> {{ substr (.Params.date | time.Format ":date_long") 0 3 }} </span>
                             </div>
                             <div class="card-body day text-primary">
-                                {{ (time .Params.start_date).Day }}
+                                {{ (time .Params.date).Day }}
                             </div>
                         </div>
                     </div>
@@ -35,10 +35,10 @@
             <div class="col-md-6 mb-4 mb-md-0">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
                 <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
-                {{ range first 4 (($events.Pages.ByParam "start_date").Reverse)}}
+                {{ range first 4 (($events.Pages.ByParam "date").Reverse)}}
                     <div>
                     {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid card-img">{{ end }}
-                    <div class="text-center pt-2">{{(time .Params.start_date).Day}}/{{(printf "%d" (time .Params.start_date).Month)}} - {{ .Params.title }}</div>
+                    <div class="text-center pt-2">{{(time .Params.date).Day}}/{{(printf "%d" (time .Params.date).Month)}} - {{ .Params.title }}</div>
                         </div>
                 {{ end }}
                     </div>

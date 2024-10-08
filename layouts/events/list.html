@@ -6,7 +6,7 @@
         <div class="row">
             {{ $paginator := .Paginate (where .Data.Pages "Params.event_type" "featured") 6 }}
             {{ range $paginator.Pages.ByPublishDate.Reverse }}
-            {{ if ge (.Params.start_date | time.AsTime) now }}
+            {{ if ge (.Params.date | time.AsTime) now }}
 
             <div class="col-12 mb-5 pb-5">
                 <div class="row align-items-center">
@@ -21,7 +21,7 @@
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
-                            <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.start_date | time.Format ":date_long" }} at {{ .Params.start_date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
+                            <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.date | time.Format ":date_long" }} at {{ .Params.date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
                         </p>
 
                         <a href="{{ .Params.link }}" title="{{ i18n "register" }} - {{ .Title }}" class="btn
@@ -62,7 +62,7 @@
 
             {{ $pastPaginator := .Paginate .Data.Pages  3 }}
             {{ range $pastPaginator.Pages.ByDate.Reverse }}
-            {{ if lt (.Params.start_date | time.AsTime) now }}
+            {{ if lt (.Params.date | time.AsTime) now }}
             <div class="col-lg-4 col-sm-6 mb-5">
                 <div class="card border-0">
                     {{ if .Params.image }}
@@ -74,7 +74,7 @@
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
-                            <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.start_date | time.Format ":date_long" }} at {{ .Params.start_date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
+                            <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.date | time.Format ":date_long" }} at {{ .Params.date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
                         </p>
                     </div>
                 </div>
