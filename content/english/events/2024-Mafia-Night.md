@@ -1,11 +1,12 @@
 ---
-draft: true
+draft: false
 title: Mafia Night
 date: 2024-06-09T17:00:00.000Z
 end_date: 2024-06-09T21:00:00.000Z
 description: Mafia Night
 type: event
-image: /Purple And Pink Modern Game Night Instagram Post.jpg
+event_type: featured
+image: /mafia.jpg
 ---
 
 انجمن البرز برگزار میکند: بازی مافیا- 

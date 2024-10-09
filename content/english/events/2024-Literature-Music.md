@@ -1,11 +1,12 @@
 ---
-draft: true
+draft: false
 title: Literature & Music
 date: 2024-04-14T12:30:00.000Z
 end_date: 2024-04-14T15:30:00.000Z
 description: Literature & Music
 type: event
-image: /Screenshot 2024-10-09 131114.png
+event_type: featured
+image: /poetry.png
 ---
 
 انجمن البرز به همراهی دوستان شب شعر و نوای آشنا برای دوستداران شعر و ادبیات برگزار میکند: 

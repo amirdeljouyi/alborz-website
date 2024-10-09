@@ -5,6 +5,7 @@ date: 2024-08-19T16:30:00.000Z
 end_date: 2024-08-19T18:30:00.000Z
 description: Bowling Mixer
 type: event
+event_type: featured
 image: /IP poster 6.jpg
 ---
 
