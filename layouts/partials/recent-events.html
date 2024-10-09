@@ -37,7 +37,7 @@
                 <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
                 {{ range first 4 (($events.Pages.ByParam "date").Reverse)}}
                     <div>
-                    {{with .Params.image}}<img src="{{ . | relURL }}" alt="" class="img-fluid card-img">{{ end }}
+                        {{with .Params.image}}<div class="mb-4 ratio ratio-1x1 event-card"><img src="{{ . | relURL }}" alt="" class="img-fluid event-img"></div>{{ end }}
                     <div class="text-center pt-2">{{(time .Params.date).Day}}/{{(printf "%d" (time .Params.date).Month)}} - {{ .Params.title }}</div>
                         </div>
                 {{ end }}

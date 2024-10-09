@@ -29,7 +29,7 @@
       <div class="col-lg-4 col-sm-6 mb-5">
         <div class="card border-0">
           {{ if .Params.image }}
-          <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4">
+          <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="event-img rounded-lg mb-4">
           {{ end }}
           <div class="card-body p-0">
             <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h3>
