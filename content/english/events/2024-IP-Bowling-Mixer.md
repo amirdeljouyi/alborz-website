@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: false
 title: IP & Bowling Mixer
 date: 2024-08-19T16:30:00.000Z
 end_date: 2024-08-19T18:30:00.000Z
