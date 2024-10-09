@@ -53,19 +53,50 @@ url = "faq/"
 weight = 5
 
 [[main]]
-name = "Board"
-url = "members/"
+name = "Boards"
+identifier = "boards"
+weight = 2
+
+[[main]]
+name = "Current Board"
+parent = "boards"
+url = "boards/board/"
+weight = 1
+
+[[main]]
+name = "Former Boards"
+parent = "boards"
+url = "boards/former-boards/"
 weight = 2
 
 [[main]]
 name = "Events"
+identifier = "events"
 url = "events/"
 weight = 3
 
 [[main]]
+name = "Upcoming Events"
+parent = "events"
+url = "events/"
+weight = 1
+
+[[main]]
 name = "Calendar"
+parent = "events"
 url = "calendar/"
+weight = 2
+
+[[main]]
+name = "Support"
+identifier = "support"
 weight = 4
+
+[[main]]
+name = "Arrival in Delft"
+parent = "support"
+url = "support/arrival-in-delft/"
+weight = 1
 
 [[main]]
 name = "Contact"
@@ -75,8 +106,8 @@ weight = 5
 
 # footer menu left
 [[footer_left]]
-name = "Board"
-url = "members/"
+name = "Boards"
+url = "board/"
 
 
 # footer menu middle

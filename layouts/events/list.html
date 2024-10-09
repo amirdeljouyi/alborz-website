@@ -5,7 +5,7 @@
     <div class="container">
         <div class="row">
             {{ $paginator := .Paginate (where .Data.Pages "Params.event_type" "featured") 6 }}
-            {{ range $paginator.Pages.ByPublishDate.Reverse }}
+            {{ range $paginator.Pages.ByDate.Reverse }}
             {{ if ge (.Params.date | time.AsTime) now }}
 
             <div class="col-12 mb-5 pb-5">
