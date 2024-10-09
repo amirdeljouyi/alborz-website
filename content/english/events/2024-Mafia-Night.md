@@ -6,7 +6,7 @@ end_date: 2024-06-09T21:00:00.000Z
 description: Mafia Night
 type: event
 event_type: featured
-image: /mafia.jpg
+image: /images/events/mafia.jpg
 ---
 
 انجمن البرز برگزار میکند: بازی مافیا- 

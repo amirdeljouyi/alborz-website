@@ -5,7 +5,7 @@ date: 2024-05-18T12:00:00.000Z
 end_date: 2024-05-18T14:00:00.000Z
 type: event
 event_type: featured
-image: /career-workshop.png
+image: /images/events/career-workshop.png
 ---
 
 انجمن البرز با همکاری دکتر مرتضی کریم‌زاده برگزار میکند:
