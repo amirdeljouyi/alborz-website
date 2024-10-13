@@ -125,62 +125,6 @@
   font-variation-settings: "wght" 400;
 }
 
-.frame {
-  padding: var(--page-padding);
-  text-transform: uppercase;
-  position: relative;
-  display: grid;
-  line-height: 1;
-  height: 100vh;
-  grid-row-gap: 0.5rem;
-  grid-column-gap: 2rem;
-  justify-items: start;
-  align-content: start;
-  //background: var(--color-bg-frame);
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto auto 1fr;
-  grid-template-areas: 'logo' 'tags' 'sponsor' 'subline' 'title';
-}
-
-.frame #cdawrap {
-  justify-self: start;
-}
-
-.frame__title {
-  white-space: nowrap;
-  grid-area: title;
-  font-size: clamp(2rem, 20vw, 20rem);
-  margin: 0;
-  letter-spacing: -0.05em;
-  padding-top: 0.15em;
-  font-weight: 400;
-  line-height: 0.55;
-  text-indent: -0.065em;
-  word-spacing: 0.15em;
-  font-family: "bricolage-grotesque-48", sans-serif;
-}
-
-.frame__subline {
-  grid-area: subline;
-}
-
-.frame__tags {
-  grid-area: tags;
-}
-
-.frame__logo {
-  grid-area: logo;
-  padding-bottom: 0.15rem;
-  font-size: 1.5rem;
-  font-family: "bricolage-grotesque-48", sans-serif;
-}
-
-.flex-line {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
-
 .content {
   position: relative;
   //min-height: 100dvh;
@@ -590,12 +534,46 @@
   height: calc(100vh - 133px);
 }
 
-.nav-item .nav-link{
+.nav-item .nav-link {
   font-weight: 300;
 }
 
-.action-button{
+.action-button {
   font-size: 18px;
-    font-weight: 300;
+  font-weight: 300;
+}
 
+.bg-gradient-prefooter-yellow {
+  background-image: linear-gradient(90deg, #fff 1.51%, #f9d3a2 50.75%, #ebbe94 69.53%);
+}
+
+.text-fluid-40-80 {
+  font-size: clamp(2.5rem, calc(5.95vw + -.36rem), 5rem);
+}
+
+.pre-footer {
+  .btn-primary {
+    height:50px;
+    width: 210px;
+  }
+  //
+  //.btn {
+  //  display: inline-block;
+  //  width: -moz-fit-content;
+  //  width: fit-content;
+  //  border-radius: 4px;
+  //  padding: .625rem 1.25rem;
+  //  font-size: 22px;
+  //  line-height: 30px;
+  //  font-weight: 700;
+  //  letter-spacing: -.02em;
+  //}
+  //
+  //@media (min-width: 768px) {
+  //  .btn {
+  //    padding-top: .875rem;
+  //    padding-bottom: .875rem;
+  //    font-weight: 500;
+  //  }
+  //}
 }
