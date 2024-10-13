@@ -9,7 +9,7 @@
 <nav class="hb-toc order-last hidden w-64 shrink-0 xl:block print:hidden px-4" aria-label="table of contents">
   {{ partial "blox/functions/get_hook" (dict "hook" "toc-start" "context" .) }}
   {{- if $toc }}
-  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-16 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
+  <div class="hb-scrollbar text-sm [hyphens:auto] sticky top-24 overflow-y-auto pr-4 pt-6 max-h-[calc(100vh-var(--navbar-height)-env(safe-area-inset-bottom))] -mr-4 rtl:-ml-4">
     {{- with .Fragments.Headings -}}
     <p class="mb-4 font-semibold tracking-tight">{{ $on_this_page }}</p>
     {{- range . -}}

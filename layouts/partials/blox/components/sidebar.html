@@ -17,7 +17,7 @@
 <aside class="hb-sidebar-container max-lg:[transform:translate3d(0,-100%,0)] {{ $sidebar_dynamic_class }}">
   <!-- Search bar on small screen -->
 
-  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))]">
+  <div class="hb-scrollbar lg:h-[calc(100vh-var(--navbar-height))] mt-10">
     <ul class="flex flex-col gap-1 lg:hidden">
       <!-- Navigation links -->
       {{ template "menu-links" (dict "context" site.Home "pageURL" $page_url "page" $context "toc" true) -}}
