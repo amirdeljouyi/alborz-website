@@ -60,7 +60,7 @@ weight = 2
 [[main]]
 name = "Current Board"
 parent = "boards"
-url = "boards/board/"
+url = "boards/current-board/"
 weight = 1
 
 [[main]]
