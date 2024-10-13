@@ -1,6 +1,6 @@
 ---
-title: "Board Members"
+title: "Former Board Members"
 # meta description
-description: "Board Members"
+description: "Former Board Members"
 draft: false
 ---
