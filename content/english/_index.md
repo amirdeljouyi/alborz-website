@@ -44,7 +44,7 @@ feature:
 ######################### Events #####################
 events:
   enable : false
-  title : "Events" 
+  title : "Upcoming Events" 
 
 
 ######################### Landing Page #####################
