@@ -41,7 +41,27 @@ feature:
       content : "Raising awareness and supporting marginalized groups"
       
 
-######################### Events #####################
+######################### Events ###########################
+######################### Events ###########################
+events_by_alborz:
+  items:
+    - title: "Sizdeh-Bedar"
+      image: "images/landing/2.jpeg"
+      year: "2023"
+      
+    - title: "Nowruz"
+      image: "images/landing/1.jpeg"
+      year: "2024"
+    - title: "Nowruz"
+      image: "images/landing/3.jpeg"
+      year: "2024"
+    - title: "Yalda"
+      image: "images/landing/5.jpeg"
+      year: "2024"
+    - title: "Tirgan"
+      image: "images/landing/4.jpeg"
+      year: "2024"
+
 events:
   enable : false
   title : "Upcoming Events" 
