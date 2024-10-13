@@ -50,7 +50,7 @@
 
 // events card
 .event-card {
-  max-width: 350px;
+  max-width: 300px;
   margin: auto;
 
   .event-img {
@@ -66,11 +66,7 @@
 }
 
 .event-card-xl {
-  max-width: 400px;
-}
-
-.event-caption-xl {
-  max-width: 400px;
+  max-width: 375px;
 }
 
 
@@ -379,4 +375,10 @@ a.post-title {
 .price {
   font-size: 50px;
   color: $text-color-dark;
+}
+
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-3xl {
+        max-width: 1536px;
+    }
 }

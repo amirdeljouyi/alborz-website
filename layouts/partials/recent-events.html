@@ -1,6 +1,6 @@
 <!-- events -->
 
-<section class="section">
+<section class="section mb-10">
     <div class="container">
         <h2 class="section-title mb-5 text-center">{{ .Params.events.title | markdownify }}</h2>
         <div class="row">
@@ -27,21 +27,30 @@
                 </div>
                 {{ end }}
                 <div class="pt-3">
-                 <a href="events" title="Check Out All Events" class="btn-link">All Events<i class="fas fa-arrow-right"></i></a>
-                    </div>
+                    <a href="events" title="Check Out All Events" class="btn-link">All Events<i
+                            class="fas fa-arrow-right"></i></a>
+                </div>
             </div>
-
-
             <div class="col-md-6 mb-4 mb-md-0">
                 {{ $events := .Paginate (where .Site.RegularPages "Section" "events") }}
-                <div {{if gt (len $events.Pages) 1}} class="slider" {{end}}>
-                {{ range first 4 (($events.Pages.ByParam "date").Reverse)}}
-                    <div>
-                        {{with .Params.image}}<div class="mb-4 ratio ratio-1x1 event-card"><img src="{{ . | relURL }}" alt="" class="img-fluid event-img"></div>{{ end }}
-                    <div class="text-center pt-2">{{(time .Params.date).Day}}/{{(printf "%d" (time .Params.date).Month)}} - {{ .Params.title }}</div>
+                <div {{if gt (len $events.Pages) 1}} class="swiper-container slider" {{end}}>
+                    <div class="swiper-wrapper">
+                        {{ range first 4 (($events.Pages.ByParam "date").Reverse)}}
+                        <div class="swiper-slide">
+                            {{with .Params.image}}
+                            <div class="mb-2 ratio ratio-1x1 event-card">
+                                <img src="{{ . | relURL }}" alt="" class="img-fluid event-img">
+                            </div>
+                            {{ end }}
+                            <div class="text-center pt-2">{{(time .Params.date).Day}}/{{(printf "%d" (time
+                                .Params.date).Month)}} - {{ .Params.title }}
+                            </div>
                         </div>
-                {{ end }}
+                        {{ end }}
                     </div>
+                    <div class="swiper-pagination"></div>
+                </div>
             </div>
+        </div>
     </div>
 </section>

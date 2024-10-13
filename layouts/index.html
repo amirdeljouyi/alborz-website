@@ -1,115 +1,236 @@
 {{ define "main" }}
 
 <!-- banner -->
-{{ with .Params.banner }}
-<section class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
-                <h1 class="mb-3">{{ .title | markdownify }}</h1>
-                <p class="mb-4">{{ .content | markdownify }}</p>
-                {{ if .button.enable }}
-                {{ with .button }}
-                <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
-                {{ end }}
-                {{ end }}
+<!--{{ with .Params.banner }}-->
+<!--<section class="banner">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-lg-10 mx-auto text-center">-->
+<!--                <h1 class="mb-3">{{ .title | markdownify }}</h1>-->
+<!--                <p class="mb-4">{{ .content | markdownify }}</p>-->
+<!--                {{ if .button.enable }}-->
+<!--                {{ with .button }}-->
+<!--                <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>-->
+<!--                {{ end }}-->
+<!--                {{ end }}-->
 
-                {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}
-            </div>
-        </div>
-    </div>
-</section>
-{{ end }}
+<!--                {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--{{ end }}-->
 <!-- /banner -->
 
-<!-- feature -->
-{{ with .Params.feature }}
-{{ if .enable }}
-<section class="section bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
+<!--&lt;!&ndash; feature &ndash;&gt;-->
+<!--{{ with .Params.feature }}-->
+<!--{{ if .enable }}-->
+<!--<section class="section bg-light">-->
+<!--    <div class="container">-->
+<!--        <div class="row justify-content-center">-->
 
-            <div class="col-md-6 align-self-center">
+<!--            <div class="col-md-6 align-self-center">-->
 
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                <ul>
-                    {{ range .feature_item }}
+<!--                <h2 class="section-title">{{ .title | markdownify }}</h2>-->
+<!--                <ul>-->
+<!--                    {{ range .feature_item }}-->
 
-                    <!--  <dt class="col-sm-3">{{ .name | title }}</dt>-->
-                    <li class="col-sm-9 mb-2" style="font-size: 17px">{{ .content | markdownify }}</li>
+<!--                    &lt;!&ndash;  <dt class="col-sm-3">{{ .name | title }}</dt>&ndash;&gt;-->
+<!--                    <li class="col-sm-9 mb-2" style="font-size: 17px">{{ .content | markdownify }}</li>-->
 
-                    {{ end }}
-                </ul>
+<!--                    {{ end }}-->
+<!--                </ul>-->
+<!--            </div>-->
+<!--            <div class="col-md-6 align-self-center">-->
+<!--                {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--{{ end }}-->
+<!--{{ end }}-->
+{{ with .Params.banner }}
+<section class="bg-neutral-100 main-frame">
+    <div class="relative overflow-hidden md:m-10">
+        <div class="container relative z-20 flex h-full items-end justify-center">
+            <h2 class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:m mt-20 text-left"
+                style="background-image:linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%)">
+                {{ .title | markdownify }} </h2>
+
+        </div>
+    </div>
+    <div class="container pt-20 md:pt-0">
+        <div class="richtext--fullscreen-subtitle px-6 px-20 md:pb-30 theme-light row">
+            <div class="col-md-6">
+                <p class="md:p-6">
+                    D.I.S.A. Alborz, is a non-profit, non-religious, and non-partisan association
+                    that supports students with Iranian backgrounds at TU Delft. </br></br>
+                    The association promotes interests related to Iran’s culture, history, and students, fostering a sense of community.
+                </p>
             </div>
-            <div class="col-md-6 align-self-center">
-                {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 event-card">
+                        <img src="/images/logo.png">
+                    </div>
+                    <div class="col-md-6  event-card">
+                        <img class="event-img" src="/images/TUDelft_logo.png">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+<section data-theme="Dark" class="bg-black">
+    <div class="relative overflow-hidden"><img alt="BendingSpoons" fetchpriority="high" width="1440" height="840"
+                                               decoding="async" data-nimg="1"
+                                               class="relative z-10 aspect-16-10 w-full object-cover"
+                                               style="color: transparent;"
+                                               src="images/Nowruz.jpg">
+        <div class="relative z-20 flex h-full items-end justify-start -mt-10 lg:-mt-20"><h2
+                class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:whitespace-pre md:px-[12%] text-center md:text-left"
+                style="background-image:radial-gradient(60.64% 143.64% at 7.87% 3.33%, #FFB800 0%, #FF824C 37.28%, #5F5E69 100%)">
+            We're a close-knit association, like family</h2></div>
+        <div class="absolute bottom-0 left-0 z-10 h-full w-full bg-gradient-fullscreen-overlay-black"></div>
+    </div>
+    <div class="container pt-20 md:pt-0">
+        <div class="grid grid-cols-1 gap-y-8 px-6 pb-20 md:grid-cols-2 md:gap-x-5 md:gap-y-24 md:px-[12%] md:pb-44">
+            <div class="grid-item grid-item--dark">
+                <h5>Solid Foundation</h5>
+                <p>Alborz is built on a strong foundation. You can access our statutes, bylaws, and policies <a
+                        href="#">here</a>.</p>
+            </div>
+            <div class="grid-item grid-item--dark">
+                <h5>Transparency</h5>
+                <p>We maintain full transparency with our members, ensuring open communication at all times.</p>
+            </div>
+            <div class="grid-item grid-item--dark">
+                <h5>Openness</h5>
+                <p>We treat everyone with the same level of respect and care, regardless of their unique characteristics
+                    or preferences.</p>
+            </div>
+            <div class="grid-item grid-item--dark">
+                <h5>Member-Focused</h5>
+                <p>With a community of over 180 members, our organization belongs to you. Learn more about our board
+                    members and former members <a href="#">here</a>.</p>
             </div>
         </div>
     </div>
 </section>
 {{ end }}
-{{ end }}
+
+<section class="content content--padded">
+    <div class="relative z-20 flex h-full items-end justify-start content-title"><h2
+            class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:whitespace-pre md:px-[12%] text-center md:text-left"
+            style="   background-image: linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%);;">
+        Events by Alborz</h2></div>
+    <div class="grid-animated grid--columns grid--spaced" data-grid-second>
+        <div class="grid__img" style="background-image:url(images/landing/1.jpeg)"></div>
+        <div class="grid__img" style="background-image:url(images/landing/2.jpeg)"></div>
+        <div class="grid__img" style="background-image:url(images/landing/3.jpeg)"></div>
+        <div class="grid__img" style="background-image:url(images/landing/4.jpeg)"></div>
+        <div class="grid__img" style="background-image:url(images/landing/5.jpeg)"></div>
+        <div class="grid__item pos-6">
+            <h4 class="type-tiny">Nowruz</h4>
+            <p>2024</p>
+        </div>
+        <div class="grid__item pos-7">
+            <h4 class="type-tiny">Yalda</h4>
+            <p>2024</p>
+        </div>
+        <div class="grid__item pos-18">
+            <h4 class="type-tiny">Tirgan</h4>
+            <p>2024</p>
+        </div>
+    </div>
+</section>
+
+{{ partial "recent-events.html" . }}
+
+
+<section data-theme="Light" class="bg-neutral-100">
+    <div class="relative overflow-hidden">
+        <img alt="" fetchpriority="high" width="1440" height="840" decoding="async" data-nimg="1"
+             class="relative z-10 aspect-16-10 w-full object-cover" style="color: transparent;"
+             src="/images/library.jpg">
+        <div class="container relative z-20 flex h-full justify-center text-center  -mt-10 lg:-mt-20">
+            <h2 class="whitespace-normal text-balance bg-clip-text px-2 pb-1 text-fluid-48-110 font-normal leading-tight tracking-tighter text-transparent md:whitespace-pre"
+                style="background-image: radial-gradient(63.43% 249.11% at 13.11% -17.29%, rgba(153, 0, 0, 0.5) 0%, rgba(173, 0, 0, 0) 100%),
+            radial-gradient(52.64% 395.11% at 89.61% 17.08%, rgba(170, 193, 225, 0.5) 15.43%, rgba(97, 139, 171, 0.5) 29.17%, rgba(39, 39, 39, 0.5) 85.72%),
+            radial-gradient(78.56% 234.17% at 56.97% -77.92%, rgb(91, 196, 255) 23.72%, rgb(172, 195, 228) 51.38%, rgb(0, 0, 0) 71.45%);">
+                Onboarding to </br> Delft Smoothly
+            </h2>
+        </div>
+        <div class="container relative z-20">
+            <div class="richtext--fullscreen-subtitle text-balance px-6 pb-24 text-center md:whitespace-pre md:px-[12%] csm_TU Library - Gebrouw_rechtenvrij_17f6547cb3.jpgtheme-light">
+                <p>Are you new to Delft or planning to apply to TU Delft? </br> Get started by reading the documents
+                    here to better understand the process.</p>
+            </div>
+        </div>
+    </div>
+</section>
 <!-- /feature -->
 
 <!-- events -->
-{{ partial "recent-events.html" . }}
+
 
 <!-- landing -->
-{{ with .Params.landing }}
-{{ if .enable }}
-{{ range $i,$p := .landing_item }}
-{{if modBool $i 2}}
-<section class="section bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                <p>{{ .content | markdownify }}</p>
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i
-                        class="fas fa-arrow-right"></i></a>
-                {{ end }}
-                {{ end }}
-            </div>
-            <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-                <div {{if gt (len .images) 1}} class="slider" {{end}}>
-                    {{ range .images }}
-                    <img src="{{ . | relURL }}" alt="" class="img-fluid">
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{{ else }}
-<section class="section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div {{if gt (len .images) 1}}class="slider" {{end}}>
-                    {{ range .images }}
-                    <img src="{{ . | relURL }}" alt="" class="img-fluid">
-                    {{ end }}
-                </div>
-            </div>
-            <div class="col-md-6">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                <p>{{ .content | markdownify }}</p>
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i
-                        class="fas fa-arrow-right"></i></a>
-                {{ end }}
-                {{ end }}
-            </div>
-        </div>
-    </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
+<!--{{ with .Params.landing }}-->
+<!--{{ if .enable }}-->
+<!--{{ range $i,$p := .landing_item }}-->
+<!--{{if modBool $i 2}}-->
+<!--<section class="section bg-light">-->
+<!--    <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--            <div class="col-md-6 order-2 order-md-1">-->
+<!--                <h2 class="section-title">{{ .title | markdownify }}</h2>-->
+<!--                <p>{{ .content | markdownify }}</p>-->
+<!--                {{ if .button.enable }}-->
+<!--                {{ with .button }}-->
+<!--                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i-->
+<!--                        class="fas fa-arrow-right"></i></a>-->
+<!--                {{ end }}-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--            <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">-->
+<!--                <div {{if gt (len .images) 1}} class="slider" {{end}}>-->
+<!--                    {{ range .images }}-->
+<!--                    <img src="{{ . | relURL }}" alt="" class="img-fluid">-->
+<!--                    {{ end }}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--{{ else }}-->
+<!--<section class="section">-->
+<!--    <div class="container">-->
+<!--        <div class="row align-items-center">-->
+<!--            <div class="col-md-6 mb-4 mb-md-0">-->
+<!--                <div {{if gt (len .images) 1}}class="slider" {{end}}>-->
+<!--                    {{ range .images }}-->
+<!--                    <img src="{{ . | relURL }}" alt="" class="img-fluid">-->
+<!--                    {{ end }}-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <div class="col-md-6">-->
+<!--                <h2 class="section-title">{{ .title | markdownify }}</h2>-->
+<!--                <p>{{ .content | markdownify }}</p>-->
+<!--                {{ if .button.enable }}-->
+<!--                {{ with .button }}-->
+<!--                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i-->
+<!--                        class="fas fa-arrow-right"></i></a>-->
+<!--                {{ end }}-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</section>-->
+<!--{{ end }}-->
+<!--{{ end }}-->
+<!--{{ end }}-->
+<!--{{ end }}-->
 <!-- /service -->
 
 <!-- screenshot -->
