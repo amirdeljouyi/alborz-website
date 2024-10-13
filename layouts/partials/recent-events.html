@@ -1,8 +1,12 @@
 <!-- events -->
 
 <section class="section mb-10">
+    <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center mb-4">
+        <h2 class="section-title -bg mb-5 text-center font-sharp text-fluid-48-110 font-normal">
+            {{ .Params.events.title | markdownify }}</h2>
+    </div>
     <div class="container">
-        <h2 class="section-title mb-5 text-center">{{ .Params.events.title | markdownify }}</h2>
+
         <div class="row">
 
             <div class="col-md-6 col-sm-6 order-1 order-md-2">

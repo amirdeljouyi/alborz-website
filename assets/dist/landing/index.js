@@ -61,7 +61,7 @@ const animateSecondGrid = () => {
       // end: '+=250%',
       // pin: grid.parentNode,
       scrub: 0.5,
-      markers: true,
+      // markers: true,
     }
   })
   .from(gridImages, {

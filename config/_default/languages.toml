@@ -6,8 +6,8 @@ contentDir = "content/english" # content/english
 weight = 1
 ########### footer content ##########
 footer_menu_left = "Association"
-footer_menu_middle = "Support"
+footer_menu_middle = "Activities & Mentoring"
 footer_menu_right = "Contact"
 footer_content = "Delft Iranian Student Association"
 # copyright
-copyright = "D.I.S.A. Alborz Association"
+copyright = "© 2024 | D.I.S.A. Alborz | All rights reserved"

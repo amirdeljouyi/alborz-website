@@ -1,14 +1,4 @@
 ---
-####################### Banner #########################
-banner:
-  title : "Delft Iranian Student Association - Alborz"
-  image : "images/banner-art.svg"
-  content : "The D.I.S.A. Alborz (former ISSTUD) is a student association of Iranians in Delft, run by students for the benefit of the growing Iranian community."
-  button:
-    enable : false
-    label : "Contact Us"
-    link : "contact/"
-
 ##################### Feature ##########################
 feature:
   enable : true
@@ -50,7 +40,7 @@ landing:
     # service item loop
     - title : "What is D.I.S.A. Alborz?"
       images:
-      - "images/what-is-alborz.svg"
+      - "images/banner-art.svg"
       content : "The Iranian student association, D.I.S.A. Alborz, formerly known as I.S.S.T.U.D., aims to promote and expand the interests of students with an Iranian background and others with a connection to the TU Delft, or interests concerning Iran and Iranian cultures and history. We are a non- profit, non-religious and non-partisan association."
       button:
         enable : false

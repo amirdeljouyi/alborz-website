@@ -526,12 +526,35 @@
 }
 
 .section-title {
-  font-size: clamp(2rem, calc(2.5vw + .5rem), 2.5rem);
+  font-size: clamp(3rem, calc(4.5vw + .5rem), 4.5rem);
+  //font-size: clamp(3rem, calc(7.23vw + -1.43rem), 5.28rem);
+  background-image: linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%);
+  color: transparent;
+  background-clip: text;
+}
 
+.section-title.second-bg {
+  background-image: radial-gradient(60.64% 143.64% at 7.87% 3.33%, #FFB800 0%, #FF824C 37.28%, #5F5E69 100%);
+}
+
+.section-title.third-bg {
+  background-image: radial-gradient(56.91% 100% at 70.4% 100%, #FFB798 0%, #8169A9 64.63%, #000000 100%);
+}
+
+.section-title.fourth-bg {
+  background-image: radial-gradient(44.81% 103.3% at 52.17% 23.79%, #FF99BE 0%, #334C8B 52.6%, #000000 100%);
+}
+
+.section-title.fifth-bg {
+  background-image: radial-gradient(63.43% 249.11% at 13.11% -17.29%, rgba(153, 0, 0, 0.5) 0%, rgba(173, 0, 0, 0) 100%), radial-gradient(52.64% 395.11% at 89.61% 17.08%, rgba(170, 193, 225, 0.5) 15.43%, rgba(97, 139, 171, 0.5) 29.17%, rgba(39, 39, 39, 0.5) 85.72%), radial-gradient(78.56% 234.17% at 56.97% -77.92%, rgb(91, 196, 255) 23.72%, rgb(172, 195, 228) 51.38%, rgb(0, 0, 0) 71.45%);
+}
+
+.section-paragraph {
+  font-size: clamp(1rem, calc(.89vw + .57rem), 1.38rem);
 }
 
 .main-frame {
-  height: calc(100vh - 133px);
+  height: calc(100vh - 124px - 1rem);
 }
 
 .nav-item .nav-link {
@@ -553,9 +576,10 @@
 
 .pre-footer {
   .btn-primary {
-    height:50px;
+    height: 50px;
     width: 210px;
   }
+
   //
   //.btn {
   //  display: inline-block;
@@ -576,4 +600,10 @@
   //    font-weight: 500;
   //  }
   //}
+}
+
+footer {
+  .container {
+    padding-left: 4rem;
+  }
 }

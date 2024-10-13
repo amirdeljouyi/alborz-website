@@ -65,19 +65,16 @@
                 <p class="md:p-6">
                     D.I.S.A. Alborz, is a non-profit, non-religious, and non-partisan association
                     that supports students with Iranian backgrounds at TU Delft. </br></br>
-                    The association promotes interests related to Iran’s culture, history, and students, fostering a sense of community.
+                    The association promotes interests related to Iran’s culture, history, and students, fostering a
+                    sense of community.
                 </p>
             </div>
             <div class="col-md-6">
                 <div class="row">
-                    <div class="col-md-6 event-card">
-                        <img src="/images/logo.png">
-                    </div>
-                    <div class="col-md-6  event-card">
-                        <img class="event-img" src="/images/TUDelft_logo.png">
+                    <div class="col-md-12 ">
+                        <img class="img-fluid" src="/images/what-is-alborz.svg">
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
@@ -121,10 +118,11 @@
 {{ end }}
 
 <section class="content content--padded">
-    <div class="relative z-20 flex h-full items-end justify-start content-title"><h2
-            class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:whitespace-pre md:px-[12%] text-center md:text-left"
+    <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center m-10">
+        <h2 class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 text-center md:text-left"
             style="   background-image: linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%);;">
-        Events by Alborz</h2></div>
+            Events by Alborz</h2>
+    </div>
     <div class="grid-animated grid--columns grid--spaced" data-grid-second>
         <div class="grid__img" style="background-image:url(images/landing/1.jpeg)"></div>
         <div class="grid__img" style="background-image:url(images/landing/2.jpeg)"></div>
@@ -233,62 +231,6 @@
 <!--{{ end }}-->
 <!-- /service -->
 
-<!-- screenshot -->
-{{ with .Params.screenshot }}
-{{ if .enable }}
-<section class="section pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-            </div>
-        </div>
-    </div>
-    {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
-</section>
-{{ end }}
-{{ end }}
-<!-- /screenshot -->
-
-
 {{ partial "instagram-advanced.html" . }}
-
-
-<!-- call to action -->
-{{ with .Params.call_to_action }}
-{{ if .enable }}
-<section class="section pt-0">
-    <div class="container p-4 shadow rounded-lg px-4">
-        <div class="row align-items-center justify-content-center text-center text-md-left">
-            {{ if .image }}
-            <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
-                <img src="{{ .image | relURL }}" alt="" class="img-fluid">
-            </div>
-            <div class="col-lg-5 col-md-6">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
-                {{ end }}
-                {{ end }}
-            </div>
-            {{ else}}
-            <div class="col-md-12 text-center">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
-                {{ end }}
-                {{ end }}
-            </div>
-            {{ end }}
-        </div>
-    </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /call to action -->
 
 {{ end }}
