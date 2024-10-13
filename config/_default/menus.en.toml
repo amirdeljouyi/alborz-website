@@ -16,9 +16,9 @@ url = "history/"
 weight = 1
 
 [[main]]
-name = "About Us"
+name = "About Alborz"
 parent = "association"
-url = "about-us/"
+url = "about-alborz/"
 weight = 2
 
 [[main]]
@@ -110,40 +110,77 @@ parent = "support"
 url = "support/later-in-life/"
 weight = 2
 
-
 [[main]]
 name = "Contact"
 url = "contact/"
 weight = 5
 
-
 # footer menu left
 [[footer_left]]
-name = "Boards"
-url = "board/"
-
-
-# footer menu middle
-[[footer_left]]
-name = "Events"
-url = "events"
+name = "History"
+url = "history"
+weight = 2
 
 [[footer_left]]
-name = "Calendar"
-url = "calendar/"
+name = "About Alborz"
+url = "about-alborz/"
+weight = 1
 
-# footer menu right
-#[[footer_middle]]
-#name = "Privacy Policy"
-#url = "privacy-policy/"
-#
-#[[footer_middle]]
-#name = "Terms & Conditions"
-#url = "terms-conditions/"
+[[footer_left]]
+name = "Current Board"
+url = "current-board/"
+weight = 3
 
-[[footer_middle]]
+[[footer_left]]
+name = "Former Boards"
+url = "former-board/"
+weight = 4
+
+[[footer_left]]
+name = "Statutes"
+url = "statutes/"
+weight = 5
+
+[[footer_left]]
+name = "Bylaws"
+url = "bylaws/"
+weight = 6
+
+[[footer_left]]
+name = "Policy"
+url = "https://drive.google.com/file/d/1avUxVeSgiNZQ5oEX9wnPKBGwj2asaRWh/view?usp=sharing"
+weight = 7
+
+[[footer_left]]
 name = "FAQ"
 url = "faq/"
+weight = 8
+
+[[footer_middle]]
+name = "Events"
+url = "events/"
+weight = 1
+
+[[footer_middle]]
+name = "Calendar"
+url = "calendar/"
+weight = 2
+
+[[footer_middle]]
+name = "Arrival in Delft"
+url = "support/arrival-in-delft/"
+weight = 3
+
+[[footer_middle]]
+name = "Living Tips in Delft"
+url = "support/later-in-life/"
+weight = 4
+
+[[footer_middle]]
+name = "Contact Us"
+url = "contact/"
+weight = 5
+
 
 [[footer_right]]
 name = "Email: alborzdelft@gmail.com"
