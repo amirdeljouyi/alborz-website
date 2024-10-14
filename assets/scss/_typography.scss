@@ -74,3 +74,49 @@ h6,
 .display-3{
   font-size: 3.5rem;
 }
+
+
+.text-fluid-40-80 {
+  font-size: clamp(2.5rem, calc(5.95vw + -.36rem), 5rem);
+}
+
+.text-fluid-20-40 {
+  font-size: clamp(1.38rem, calc(2.08vw + .38rem), 2.25rem);
+}
+
+.richtext--fullscreen-subtitle p {
+  font-size: clamp(1.25rem, calc(1.49vw + .54rem), 1.88rem);
+  line-height: 1.33;
+  letter-spacing: -.02em;
+  --tw-text-opacity: 1;
+  color: rgba(143, 145, 153, var(--tw-text-opacity));
+}
+
+.content p, .section-paragraph {
+  font-size: clamp(1rem, calc(.89vw + .57rem), 1.38rem);
+}
+
+
+.text-transparent {
+  color: transparent;
+}
+
+.-tracking-7 {
+  letter-spacing: -.07em;
+}
+
+.leading-tight {
+  line-height: 1.1;
+}
+
+.font-normal {
+  font-weight: 400;
+}
+
+.text-fluid-48-110 {
+  font-size: clamp(3rem, calc(7.23vw + -1.43rem), 5.28rem);
+}
+
+.text-left {
+  text-align: left;
+}

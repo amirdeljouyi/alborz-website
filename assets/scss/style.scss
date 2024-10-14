@@ -33,16 +33,18 @@ $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 
 @import 'mixins';
 
-@import 'typography';
-
 @import 'buttons';
 
 @import 'common';
+
+@import 'typography';
 
 @import 'templates/navigation.scss';
 
 @import 'templates/main.scss';
 
-@import 'custom';
+@import 'templates/footer.scss';
 
 @import 'lenis';
+
+@import 'custom';
