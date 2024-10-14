@@ -6,7 +6,8 @@
         <div class="container relative z-20 flex h-full items-end justify-center">
             <h2 class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:m mt-20 text-left"
                 style="background-image:linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%)">
-                {{ .title | markdownify }} </h2>
+                {{ .title | markdownify }}
+            </h2>
 
         </div>
     </div>
@@ -14,10 +15,7 @@
         <div class="richtext--fullscreen-subtitle px-6 px-20 md:pb-30 theme-light row">
             <div class="col-md-6">
                 <p class="md:p-6">
-                    D.I.S.A. Alborz, is a non-profit, non-religious, and non-partisan association
-                    that supports students with Iranian backgrounds at TU Delft. </br></br>
-                    The association promotes interests related to Iran’s culture, history, and students, fostering a
-                    sense of community.
+                    {{ .content | markdownify }}
                 </p>
             </div>
             <div class="col-md-6">
@@ -31,15 +29,16 @@
     </div>
 </section>
 <section data-theme="Dark" class="bg-black">
-    <div class="relative overflow-hidden"><img alt="BendingSpoons" fetchpriority="high" width="1440" height="840"
-                                               decoding="async" data-nimg="1"
-                                               class="relative z-10 aspect-16-10 w-full object-cover"
-                                               style="color: transparent;"
-                                               src="images/Nowruz.jpg">
-        <div class="relative z-20 flex h-full items-end justify-start -mt-10 lg:-mt-20"><h2
-                class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:whitespace-pre md:px-[12%] text-center md:text-left"
+    <div class="relative overflow-hidden">
+        <img alt="" fetchpriority="high" width="1440" height="840"
+             decoding="async" data-nimg="1" class="relative z-10 aspect-16-10 w-full object-cover"
+             style="color: transparent;" src="images/Nowruz.jpg">
+        <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center">
+            <h2 class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 text-center md:text-left"
                 style="background-image:radial-gradient(60.64% 143.64% at 7.87% 3.33%, #FFB800 0%, #FF824C 37.28%, #5F5E69 100%)">
-            We're a close-knit association, like family</h2></div>
+                We're a close-knit association, like family
+            </h2>
+        </div>
         <div class="absolute bottom-0 left-0 z-10 h-full w-full bg-gradient-fullscreen-overlay-black"></div>
     </div>
     <div class="container pt-20 md:pt-0">
@@ -72,19 +71,22 @@
 <section class="content--padded">
     <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center m-10">
         <h2 class="bg-clip-text px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 text-center md:text-left"
-            style="background-image: linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%);;">
+            style="background-image: linear-gradient(83.96deg, #181818 4.78%, #6CA7FF 48.68%, #F9B144 86.32%);">
             Events by Alborz</h2>
     </div>
-    <div class="grid grid-cols-1 gap-y-1 px-6 pb-20 md:grid-cols-5 md:gap-x-5 md:gap-y-24" data-grid-second>
-        {{ range .items }}
-        <div class="grid-item grid__img">
-            {{ with .image }} <img src="{{ . | relURL }}"> {{ end }}
-            <div class="grid__caption mt-2">
-                <h4>{{.title}}</h4>
-                <p>{{.year}}</p>
+    <div class="pb-20">
+        <div class="grid grid-cols-1 gap-y-1 px-6  md:grid-cols-5 md:gap-x-5 md:gap-y-24"
+             data-grid-second>
+            {{ range .items }}
+            <div class="grid-item grid__img">
+                {{ with .image }} <img src="{{ . | relURL }}"> {{ end }}
+                <div class="grid__caption mt-2">
+                    <h4>{{.title}}</h4>
+                    <p>{{.year}}</p>
+                </div>
             </div>
+            {{ end }}
         </div>
-        {{ end }}
     </div>
 </section>
 

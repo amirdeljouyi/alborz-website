@@ -43,8 +43,6 @@ link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min
 
 ## JS Plugins
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
-[[params.plugins.js]]
 link = "plugins/bootstrap/bootstrap.bundle.min.js"
 [[params.plugins.js]]
 link = "plugins/alpinejs/cdn.min.js"

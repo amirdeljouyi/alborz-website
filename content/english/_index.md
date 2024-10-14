@@ -3,7 +3,10 @@
 banner:
   title : "Delft Iranian Student Association - Alborz"
   image : "images/banner-art.svg"
-  content : "The D.I.S.A. Alborz (former ISSTUD) is a student association of Iranians in Delft, run by students for the benefit of the growing Iranian community."
+  content : "D.I.S.A. Alborz, is a non-profit, non-religious, and non-partisan association
+            that supports students with Iranian backgrounds at TU Delft. </br></br>
+            The association promotes interests related to Iran’s culture, history, and students, fostering a
+            sense of community."
   button:
     enable : false
     label : "Contact Us"
