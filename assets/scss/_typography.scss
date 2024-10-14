@@ -71,7 +71,7 @@ h6,
   font-size: 15px;
 }
 
-.display-3{
+.display-3 {
   font-size: 3.5rem;
 }
 
@@ -94,8 +94,8 @@ h6,
 
 
 .richtext--fullscreen-body a, .richtext--fullscreen-subtitle a {
-    color: rgba(0, 0, 0, var(--tw-text-opacity));
-    //text-decoration-line: underline;
+  color: rgba(0, 0, 0, var(--tw-text-opacity));
+  //text-decoration-line: underline;
 }
 
 .content p, .section-paragraph {
@@ -120,7 +120,14 @@ h6,
 }
 
 .text-fluid-48-110 {
-  font-size: clamp(3rem, calc(7.23vw + -1.43rem), 5.28rem);
+  font-size: clamp(2.5rem, calc(6.23vw + -1.43rem), 4.28rem);
+}
+
+
+@media (min-width: 768px) {
+  .text-fluid-48-110 {
+    font-size: clamp(3rem, calc(7.23vw + -1.43rem), 5.28rem);
+  }
 }
 
 .text-left {
