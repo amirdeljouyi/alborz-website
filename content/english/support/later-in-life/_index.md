@@ -10,8 +10,8 @@ sidebar:
 
 Discover key tips and guidance for navigating life in Delft after you’ve settled in.
 {{< cards >}}
-  {{< card url="support/later-in-life/inside-university" title="Inside University" >}}
-  {{< card url="support/later-in-life/outside-university" title="Outside University" >}}
+  {{< card url="inside-university" title="Inside University" >}}
+  {{< card url="outside-university" title="Outside University" >}}
 {{< /cards >}}
 
 

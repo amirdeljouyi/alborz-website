@@ -10,8 +10,8 @@ sidebar:
 Discover crucial tips and guidance for your arrival in Delft.
 
 {{< cards >}}
-  {{< card url="support/arrival-in-delft/inside-university" title="Inside University" >}}
-  {{< card url="support/arrival-in-delft/outside-university" title="Outside University" >}}
+  {{< card url="inside-university" title="Inside University" >}}
+  {{< card url="outside-university" title="Outside University" >}}
 {{< /cards >}}
 
 
