@@ -80,43 +80,81 @@ const animateSecondGrid = () => {
     const gridImages = grid.querySelectorAll('.grid__img');
     const middleIndex = Math.floor(gridImages.length / 2);
 
-    gsap.timeline({
-        defaults: {
-            ease: 'power3'
+    gsap.registerPlugin(ScrollTrigger);
+
+    ScrollTrigger.matchMedia({
+        // Desktop animations
+        "(min-width: 768px)": function () {
+            gsap.timeline({
+                defaults: {
+                    ease: 'power3'
+                },
+                scrollTrigger: {
+                    trigger: grid,
+                    start: '-35% center',
+                    end: '120% 80%',
+                    pinSpacing: false,
+                    scrub: 0.5,
+                }
+            })
+                .from(gridImages, {
+                    stagger: {
+                        amount: 0.3,
+                        from: 'center'
+                    },
+                    y: window.innerHeight,
+                    transformOrigin: '50% 0%',
+                    rotation: pos => {
+                        const distanceFromCenter = Math.abs(pos - middleIndex);
+                        return pos < middleIndex ? distanceFromCenter * 3 : distanceFromCenter * -3;
+                    },
+                })
+                .from(grid.querySelectorAll('.grid__caption'), {
+                    stagger: {
+                        amount: 0.3,
+                        from: 'center'
+                    },
+                    yPercent: 100,
+                    autoAlpha: 0
+                }, 0);
         },
-        scrollTrigger: {
-            trigger: grid,
-            start: '-35% center',
-            end: '120% 80%',
-            pinSpacing: false,
-            // start: 'center center',
-            // end: '+=250%',
-            // pin: grid.parentNode,
-            scrub: 0.5,
-            // markers: true,
+
+        // Mobile animations
+        "(max-width: 767px)": function () {
+            gsap.timeline({
+                defaults: {
+                    ease: 'power3'
+                },
+                scrollTrigger: {
+                    trigger: grid,
+                    start: '-30% center',
+                    end: '100% 80%',
+                    pinSpacing: false,
+                    scrub: 0.5,
+                }
+            })
+                .from(gridImages, {
+                    stagger: {
+                        amount: 0.2,
+                        from: 'center'
+                    },
+                    y: window.innerHeight * 0.4,  // Reduced y movement for smaller screens
+                    transformOrigin: '50% 0%',
+                    rotation: pos => {
+                        const distanceFromCenter = Math.abs(pos - middleIndex);
+                        return pos < middleIndex ? distanceFromCenter * 2 : distanceFromCenter * -2;
+                    },
+                })
+                .from(grid.querySelectorAll('.grid__caption'), {
+                    stagger: {
+                        amount: 0.2,
+                        from: 'center'
+                    },
+                    yPercent: 100,
+                    autoAlpha: 0
+                }, 0);
         }
-    })
-        .from(gridImages, {
-            stagger: {
-                amount: 0.3,
-                from: 'center'
-            },
-            y: window.innerHeight,
-            transformOrigin: '50% 0%',
-            rotation: pos => {
-                const distanceFromCenter = Math.abs(pos - middleIndex);
-                return pos < middleIndex ? distanceFromCenter * 3 : distanceFromCenter * -3;
-            },
-        })
-        // text content
-        .from(grid.querySelectorAll('.grid__caption'), {
-            stagger: {
-                amount: 0.3,
-                from: 'center'
-            },
-            yPercent: 100,
-            autoAlpha: 0
-        }, 0);
+    });
 };
 
 // Main initialization function
@@ -138,26 +176,21 @@ const init = () => {
     // animateEighthGrid();
     // animateNinthGrid();
 };
+
 const initSmoothScrolling = () => {
-// Initialize a new Lenis instance for smooth scrolling
-const lenis = new Lenis();
+    // Initialize Lenis for smooth scroll effects. Lerp value controls the smoothness.
+    const lenis = new Lenis({lerp: 0.15});
 
-// Listen for the 'scroll' event and log the event data to the console
-// lenis.on('scroll', (e) => {
-//   console.log(e);
-// });
+    // Sync ScrollTrigger with Lenis' scroll updates.
+    lenis.on('scroll', ScrollTrigger.update);
 
-// Synchronize Lenis scrolling with GSAP's ScrollTrigger plugin
-lenis.on('scroll', ScrollTrigger.update);
+    // Ensure GSAP animations are in sync with Lenis' scroll frame updates.
+    gsap.ticker.add(time => {
+        lenis.raf(time * 1000); // Convert GSAP's time to milliseconds for Lenis.
+    });
 
-// Add Lenis's requestAnimationFrame (raf) method to GSAP's ticker
-// This ensures Lenis's smooth scroll animation updates on each GSAP tick
-gsap.ticker.add((time) => {
-  lenis.raf(time * 1000); // Convert time from seconds to milliseconds
-});
-
-// Disable lag smoothing in GSAP to prevent any delay in scroll animations
-gsap.ticker.lagSmoothing(0);
+    // Turn off GSAP's default lag smoothing to avoid conflicts with Lenis.
+    gsap.ticker.lagSmoothing(0);
 };
 
 

@@ -4,16 +4,16 @@
 <section class="bg-neutral-100 main-frame">
     <div class="relative overflow-hidden md:m-10">
         <div class="container relative z-20 flex h-full items-end justify-center">
-            <h2 class="bg-clip-text first-bg-gr px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 md:m mt-20 text-left">
+            <h2 class="bg-clip-text first-bg-gr px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-10 md:m mt-10 md:mt-20 text-left">
                 {{ .title | markdownify }}
             </h2>
 
         </div>
     </div>
-    <div class="container pt-20 md:pt-0">
+    <div class="container pt-10 md:pt-0">
         <div class="richtext--fullscreen-subtitle px-6 px-20 md:pb-30 theme-light row">
             <div class="col-md-6">
-                <p class="md:p-6">
+                <p class="md:p-6 text-wrap text-balance text-justify">
                     {{ .content | markdownify }}
                 </p>
             </div>
@@ -64,7 +64,7 @@
             {{.title}}</h2>
     </div>
     <div class="pb-20">
-        <div class="grid grid-cols-1 gap-y-1 px-6  md:grid-cols-5 md:gap-x-5 md:gap-y-24"
+        <div class="grid grid-cols-2 gap-y-1 px-6 md:grid-cols-3 xl:grid-cols-5 gap-x-1 sm:gap-x-2 md:gap-x-5 md:gap-y-24"
              data-grid-second>
             {{ range .items }}
             <div class="grid-item grid__img">

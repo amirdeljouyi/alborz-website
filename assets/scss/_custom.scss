@@ -291,14 +291,32 @@
 
 
 .main-frame {
-  height: calc(100vh - 124px - 1rem);
+  height: calc(100vh - 120px);
 }
 
 .nav-item .nav-link {
   font-weight: 300;
 }
+@media (min-width: 1200px) {
+  .nav-item .nav-link {
+    --bs-nav-link-font-size: 20px;
+    font-size: var(--bs-nav-link-font-size);
+  }
+}
 
 .action-button {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
+}
+
+@media (min-width: 1200px) {
+  .action-button {
+    font-size: 18px;
+  }
+}
+
+
+
+.aspect-16-10 {
+    aspect-ratio: 1.6;
 }
