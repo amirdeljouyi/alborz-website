@@ -1,7 +1,7 @@
 ---
-title: "2023-2024"
+title: "2024-2025"
 # meta description
-description: "2023-2024"
+description: "2024-2025"
 draft: false
 weight: 1
 ---

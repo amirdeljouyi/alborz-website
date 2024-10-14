@@ -15,38 +15,26 @@ banner:
 ##################### Feature ##########################
 feature:
   enable : true
-  title : "Our goals"
+  title : "We're a close-knit association, like family"
   image : "images/our-goals.svg"
   feature_item:
     # feature item loop
-    - name : "Solid foundation"
-      icon : "fas fa-object-group"
-      content : "Establishing an association with a firm foundation"
+    - name : "Solid Foundation"
+      content : "Alborz is built on a strong foundation. You can access our [statutes](https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view), [bylaws](https://drive.google.com/file/d/12Qr3D_vwmDXxdByfGlcI7HewQZNg3leb/view), and [policy](https://drive.google.com/file/d/1avUxVeSgiNZQ5oEX9wnPKBGwj2asaRWh/view)."
       
-    # feature item loop
-    - name : "Strengthening the community"
-      icon : "fas fa-user-plus"
-      content : "Rebuilding and strengthening the Iranian community"
+    - name : "Transparency"
+      content : "We maintain full transparency with our members, ensuring open communication at all times."
       
-    # feature item loop
-    - name : "Mentoring"
-      icon : "fas fa-user-clock"
-      content : "Providing support and mentorship for members"
+    - name : "Openness"
+      content : "We treat everyone with the same level of respect and care, regardless of their unique characteristics or preferences."
       
-    # feature item loop
-    - name : "Development"
-      icon : "fas fa-heart"
-      content : "Multifaceted development of individuals and the community"
-      
-    # feature item loop
-    - name : "Diversity & Inclusion"
-      icon : "fas fa-magnet"
-      content : "Raising awareness and supporting marginalized groups"
+    - name : "Member-Focused"
+      content : "With a community of over 180 members, our organization belongs to you. Get know our [current board members](boards/current-board) and [former board members](boards/former-boards)"
       
 
 ######################### Events ###########################
-######################### Events ###########################
 events_by_alborz:
+  title: "Events by Alborz"
   items:
     - title: "Sizdeh-Bedar"
       image: "images/landing/2.jpeg"
@@ -66,49 +54,13 @@ events_by_alborz:
       year: "2024"
 
 events:
-  enable : false
+  enable : true
   title : "Upcoming Events" 
 
 
-######################### Landing Page #####################
-landing:
-  enable : true
-  landing_item:
-        
-    # service item loop
-    - title : "What is D.I.S.A. Alborz?"
-      images:
-      - "images/what-is-alborz.svg"
-      content : "The Iranian student association, D.I.S.A. Alborz, formerly known as I.S.S.T.U.D., aims to promote and expand the interests of students with an Iranian background and others with a connection to the TU Delft, or interests concerning Iran and Iranian cultures and history. We are a non- profit, non-religious and non-partisan association."
-      button:
-        enable : false
-        label : "Check it out"
-        link : "#"
-        
-    # service item loop
-    - title : "What do we do?"
-      images:
-      - "images/what-do-we-do.svg"
-      content : "We organize activities, events and conferences that cover a wide range of interests, with consideration for the physical, intellectual, emotional and spiritual wellbeing of our members. On top of all that, we celebrate ancient traditions of Iran as well, such as Yalda, Nowruz and many more!"
-      button:
-        enable : false
-        label : "Check it out"
-        link : "#"
-
-################### Screenshot ########################
-screenshot:
-  enable : false
-  title : "Experience the best <br> workflow with us"
-  image : "images/screenshot.svg"
-
-  
-
-##################### Call to action #####################
-call_to_action:
-  enable : true
-  title : "Ready to join us?"
-  button:
-    enable : true
-    label : Become a Member
-    link : "https://form.jotform.com/230291977411356"
+support:
+  title: "Onboarding to </br> Delft Smoothly"
+  content: "Are you new to Delft or planning to apply to TU Delft?</br>
+            Get started by reading the documents
+            here to better understand the process."
 ---
