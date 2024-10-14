@@ -37,8 +37,6 @@ $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 
 @import 'common';
 
-@import 'typography';
-
 @import 'templates/navigation.scss';
 
 @import 'templates/main.scss';
@@ -46,5 +44,7 @@ $icon-font: '{{.icon_font | default "Font Awesome 5 Free"}}';
 @import 'templates/footer.scss';
 
 @import 'lenis';
+
+@import 'typography';
 
 @import 'custom';

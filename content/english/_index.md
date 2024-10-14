@@ -59,8 +59,8 @@ events:
 
 
 support:
-  title: "Onboarding to </br> Delft Smoothly"
+  title: "Settling Smoothly </br> in Delft "
   content: "Are you new to Delft or planning to apply to TU Delft?</br>
-            Get started by reading the documents
-            here to better understand the process."
+            Start your journey by exploring our guides [Upon Arrival](support/arrival-in-delft) and [Later in Life](support/later-in-life) documents. </br>
+            These resources will help you navigate important steps, including finding housing and settling into life in Delft."
 ---

@@ -89,13 +89,13 @@
         <img alt="" fetchpriority="high" width="1440" height="840" decoding="async" data-nimg="1"
              class="relative z-10 aspect-16-10 w-full object-cover" style="color: transparent;"
              src="/images/library.jpg">
-        <div class="container relative z-20 flex h-full justify-center text-center  -mt-10 lg:-mt-20">
-            <h2 class="whitespace-normal sixth-bg-gr text-balance bg-clip-text px-2 pb-1 text-fluid-48-110 font-normal leading-tight tracking-tighter text-transparent md:whitespace-pre">
+        <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center mb-4 mt-4">
+            <h2 class="whitespace-normal sixth-bg-gr text-balance bg-clip-text px-2 pb-1 text-fluid-48-110 font-normal text-center leading-tight tracking-tighter text-transparent">
                 {{ .title | markdownify }}
             </h2>
         </div>
         <div class="container relative z-20">
-            <div class="richtext--fullscreen-subtitle text-balance px-6 pb-24 text-center md:whitespace-pre md:px-[12%] csm_TU Library - Gebrouw_rechtenvrij_17f6547cb3.jpgtheme-light">
+            <div class="richtext--fullscreen-subtitle text-balance text-wrap px-6 pb-24 md:whitespace-pre md:px-[12%] theme-ligh mb-10">
                 <p>{{ .content | markdownify }}</p>
             </div>
         </div>

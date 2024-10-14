@@ -92,6 +92,12 @@ h6,
   color: rgba(143, 145, 153, var(--tw-text-opacity));
 }
 
+
+.richtext--fullscreen-body a, .richtext--fullscreen-subtitle a {
+    color: rgba(0, 0, 0, var(--tw-text-opacity));
+    //text-decoration-line: underline;
+}
+
 .content p, .section-paragraph {
   font-size: clamp(1rem, calc(.89vw + .57rem), 1.38rem);
 }
