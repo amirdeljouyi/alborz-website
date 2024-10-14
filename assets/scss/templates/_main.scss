@@ -13,7 +13,7 @@
     @extend .shadow;
   }
 
-  svg,i {
+  svg, i {
     font-size: 30px;
     color: $primary-color;
     display: inline-block;
@@ -49,15 +49,26 @@
 }
 
 // events card
-.card-img {
-  object-fit: cover;
-  width: 100%;
-  height: 15vw;
+.event-card {
+  max-width: 300px;
+  margin: auto;
 
-  @include tablet {
-    height: 35vw;
+  .event-img {
+    object-fit: cover;
   }
+
+  //width: 100%;
+  //height: 15vw;
+  //
+  //@include tablet {
+  //  height: 35vw;
+  //}
 }
+
+.event-card-xl {
+  max-width: 375px;
+}
+
 
 // events post
 a.post-title {
@@ -70,12 +81,6 @@ a.post-title {
 }
 
 .content {
-
-  * {
-    word-break: break-word;
-    overflow-wrap: break-word;
-    margin-bottom: 20px;
-  }
 
   img {
     max-width: 100%;
@@ -351,7 +356,7 @@ a.post-title {
   }
 }
 
-// members table
+// boards table
 .col-recommended {
   margin: -2rem -1.5rem;
   z-index: 1;
@@ -361,7 +366,25 @@ a.post-title {
   }
 }
 
-.price{
+.price {
   font-size: 50px;
   color: $text-color-dark;
+}
+
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1180px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1360px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl, .container-3xl {
+        max-width: 1536px;
+    }
 }

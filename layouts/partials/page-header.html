@@ -1,8 +1,10 @@
 <section class="section pb-0">
-  <div class="container text-center">
-    <h1 class="display-3">{{ .Title | markdownify }}</h1>
-    {{ with .Params.subtitle }}
-    <p>{{ . | markdownify }}</p>
-    {{ end }}
-  </div>
+    <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center">
+        <h1 class="section-title display-3">{{ .Title | markdownify }}</h1>
+    </div>
+    <div class="container text-center">
+        {{ with .Params.subtitle }}
+        <p>{{ . | markdownify }}</p>
+        {{ end }}
+    </div>
 </section>

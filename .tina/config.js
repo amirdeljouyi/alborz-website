@@ -125,7 +125,7 @@ export default defineConfig({
       {
         label: "members",
         name: "members",
-        path: "content/english/members",
+        path: "content/english/boards",
         fields: [
           {
             name: "draft",

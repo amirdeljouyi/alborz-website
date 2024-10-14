@@ -1,55 +1,132 @@
-<footer class="bg-light section pb-0">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-6 mb-5">
+<!-- If navbar reaches to footer add data-theme-->
+<!--<section data-theme="Dark" class="pre-footer bg-black">-->
+<section class="pre-footer bg-black">
+    <div class="container flex flex-row align-items-center justify-center">
+        <div class="flex flex-col justify-center lg:p-0 mt-3 mb-5">
+            <h3 class="mb-4 bg-clip-text text-fluid-40-80 leading-snug text-transparent bg-gradient-prefooter-yellow">
+                Ready to Join Us
+            </h3>
+            <a class="action-button btn btn-sm btn-primary ml-3 font-semibold m-auto" href="/careers">Become a
+                member</a>
+        </div>
+    </div>
+</section>
+
+<!-- If navbar reaches to footer add data-theme-->
+<!--<footer class="bg-black" data-theme="Dark">-->
+<footer class="bg-black">
+    <div class="container grid grid-cols-2 border-t px-6 pb-8 pt-10 md:grid-cols-3 lg:grid-cols-4 lg:px-24 lg:pb-6 border-t-neutral-700">
+        <div class="col-span-2 row-start-3 mb-6 mt-[38px] flex items-center justify-between sm:col-span-1 sm:justify-start md:row-start-2 md:mb-0 md:block md:justify-start lg:col-auto lg:row-auto lg:mt-0 lg:justify-start">
+            <div class="md:mb-15">
+                <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
+                    {{ with site.Params.logo}}
+                    <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}"
+                         alt="{{ site.Title }}">
+                    {{ else }}{{site.Title}}{{end}}
+                </a>
+            </div>
+            <p class="text-fluid-16-18 font-normal leading-tight"><span class="inline-block pr-1 text-white md:block">Alborz Association</span><span
+                    class="inline-block italic text-white ">Delft Iranian Student Association</span></p></div>
         {{ if site.Menus.footer_left }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_left }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
+        <div class=" mb-6 flex flex-col md:mb-0">
+            <p class="mb-4 text-14 font-normal text-neutral-450">{{site.Params.footer_menu_left}}</p>
+            {{ range site.Menus.footer_left }}
+            <div class="mb-2">
+                <a class="relative whitespace-pre-line text-fluid-16-18 leading-tight text-white hover:underline"
+                   href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a>
+            </div>
+            {{end}}
+        </div>
+        {{end}}
         {{ if site.Menus.footer_middle }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_middle }}
-          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
+        <div class=" mb-6 flex flex-col md:mb-0"><p class="mb-4 text-14 font-normal text-neutral-450">
+            {{site.Params.footer_menu_middle}}</p>
+            {{ range site.Menus.footer_middle }}
+            <div class="mb-2"><a
+                    class="relative whitespace-pre-line text-fluid-16-18 leading-tight text-white hover:underline"
+                    href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></div>
+            {{end}}
+        </div>
+        {{ end}}
         {{ if site.Menus.footer_right }}
-        <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>
-        <ul class="list-unstyled footer-list">
-          {{ range site.Menus.footer_right }}
-<!--          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>-->
-          <li>{{ .Name }}</li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
-      <div class="col-md-3 col-sm-6 mb-5">
-        <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">
-          {{ with site.Params.logo}}
-          <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}" alt="{{ site.Title }}">
-          {{ else }}{{site.Title}}{{end}}
-        </a>
-        <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>
-        {{ with site.Params.social }}
-        <ul class="list-inline so-icons">
-          {{ range . }}
-          <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i class="{{ .icon }}"></i></a></li>
-          {{ end }}
-        </ul>
-        {{ end }}
-      </div>
+        <div class="col-span-2 md:col-auto"><p class="mb-4 text-14 font-normal text-neutral-450">
+            {{site.Params.footer_menu_right}}</p>
+            {{ range site.Menus.footer_right }}
+            <div class="richtext--footer-column--dark "><p class="text-white">{{ .Name }}</p>
+            </div>
+            {{ end }}
+
+            {{ with site.Params.social }}
+            <ul class="list-inline so-icons">
+                {{ range . }}
+                <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i
+                        class="{{ .icon }}"></i></a></li>
+                {{ end }}
+            </ul>
+            {{ end }}
+        </div>
+        {{ end}}
     </div>
-    <div class="border-top border-default text-center py-4 mt-4">
-      <small class="content">{{ site.Params.Copyright | markdownify }}</small>
+    <div class=" container border-t  text-center py-4 mt-4 border-t-neutral-700">
+        <small class="content text-white">{{ site.Params.Copyright | markdownify }}</small>
     </div>
-  </div>
 </footer>
+
+
+<!--<footer class="bg-light section pb-0">-->
+<!--    <div class="container">-->
+<!--        <div class="row">-->
+<!--            <div class="col-md-3 col-sm-6 mb-5">-->
+<!--                {{ if site.Menus.footer_left }}-->
+<!--                <div class="h3 mb-4">{{ site.Params.footer_menu_left }}</div>-->
+<!--                <ul class="list-unstyled footer-list">-->
+<!--                    {{ range site.Menus.footer_left }}-->
+<!--                    <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>-->
+<!--                    {{ end }}-->
+<!--                </ul>-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--            <div class="col-md-3 col-sm-6 mb-5">-->
+<!--                {{ if site.Menus.footer_middle }}-->
+<!--                <div class="h3 mb-4">{{ site.Params.footer_menu_middle }}</div>-->
+<!--                <ul class="list-unstyled footer-list">-->
+<!--                    {{ range site.Menus.footer_middle }}-->
+<!--                    <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>-->
+<!--                    {{ end }}-->
+<!--                </ul>-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--            <div class="col-md-3 col-sm-6 mb-5">-->
+<!--                {{ if site.Menus.footer_right }}-->
+<!--                <div class="h3 mb-4">{{ site.Params.footer_menu_right }}</div>-->
+<!--                <ul class="list-unstyled footer-list">-->
+<!--                    {{ range site.Menus.footer_right }}-->
+<!--                    &lt;!&ndash;          <li><a href="{{ .URL | relLangURL }}" title="{{ .Name }}">{{ .Name }}</a></li>&ndash;&gt;-->
+<!--                    <li>{{ .Name }}</li>-->
+<!--                    {{ end }}-->
+<!--                </ul>-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--            <div class="col-md-3 col-sm-6 mb-5">-->
+<!--                <a class="d-block h3 mb-3" href="{{ site.BaseURL | absLangURL}}">-->
+<!--                    {{ with site.Params.logo}}-->
+<!--                    <img width="{{site.Params.logo_width}}" class="img-fluid" src="{{ . | relURL }}"-->
+<!--                         alt="{{ site.Title }}">-->
+<!--                    {{ else }}{{site.Title}}{{end}}-->
+<!--                </a>-->
+<!--                <p class="mb-4">{{ site.Params.footer_content | markdownify }}</p>-->
+<!--                {{ with site.Params.social }}-->
+<!--                <ul class="list-inline so-icons">-->
+<!--                    {{ range . }}-->
+<!--                    <li class="list-inline-item"><a href="{{ .link | safeURL }}" title="{{ .title }}"><i-->
+<!--                            class="{{ .icon }}"></i></a></li>-->
+<!--                    {{ end }}-->
+<!--                </ul>-->
+<!--                {{ end }}-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="border-top border-default text-center py-4 mt-4">-->
+<!--            <small class="content">{{ site.Params.Copyright | markdownify }}</small>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</footer>-->

@@ -5,26 +5,27 @@
     <div class="container">
         <div class="row">
             {{ $paginator := .Paginate (where .Data.Pages "Params.event_type" "featured") 6 }}
-            {{ range $paginator.Pages.ByPublishDate.Reverse }}
+            {{ range $paginator.Pages.ByDate.Reverse }}
             {{ if ge (.Params.date | time.AsTime) now }}
 
-            <div class="col-12 mb-5 pb-5">
-                <div class="row align-items-center">
+            <div class="col-lg-4 col-sm-6 mb-5">
+                <div class="card border-0 event-card event-card-xl">
                     {{ if .Params.image }}
-                    <div class="col-md-6 mb-4 mb-md-0">
-                        <img src="{{ .Params.image | relURL }}" alt="{{.Title}}" class="img-fluid rounded-lg w-100">
+                    <div class="mb-4 ratio ratio-1x1 ">
+                        <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}"
+                             class="img-fluid rounded-lg event-img"/>
                     </div>
                     {{ end }}
-                    <div class="col-md-6">
-                        <h2><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h2>
-                        <p {{if eq .Params.language "persian" }} class="card-text  fa-lang" {{else}} class="card-text" {{end}}>{{ .Summary }}</p>
+                    <div class="card-body p-0 ">
+                        <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h3>
+                        <p {{if eq .Params.language "persian" }} class="card-text fa-lang" {{else}} class="card-text"
+                        {{end}}>{{ .Summary }}</p>
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
                             <span><i class="fas fa-calendar-check"></i> &nbsp; {{ .Params.date | time.Format ":date_long" }} at {{ .Params.date | time.Format ":time_short" }} -  {{ .Params.end_date | time.Format ":time_short" }}</span>
                         </p>
-
-                        <a href="{{ .Params.link }}" title="{{ i18n "register" }} - {{ .Title }}" class="btn
+                        <a href="{{ .Params.link }}" title="{{ i18n " register" }} - {{ .Title }}" class="btn
                         btn-primary">{{ i18n "register" }}</a>
                     </div>
                 </div>
@@ -32,45 +33,53 @@
             {{ end }}
             {{ end }}
 
-<!--            <nav class="col-12" aria-label="Page navigation">-->
-<!--                <ul class="pagination justify-content-center">-->
-<!--                    {{ if $paginator.HasPrev }}-->
-<!--                    <li class="page-item">-->
-<!--                        <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">-->
-<!--                            <span aria-hidden="true">&laquo;</span>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    {{ end }}-->
-<!--                    {{ range $paginator.Pagers }}-->
-<!--                    <li class="page-item {{ if eq . $paginator.PageNumber }}active{{ end }}">-->
-<!--                        <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>-->
-<!--                    </li>-->
-<!--                    {{ end }}-->
-<!--                    {{ if $paginator.HasNext }}-->
-<!--                    <li class="page-item">-->
-<!--                        <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">-->
-<!--                            <span aria-hidden="true">&raquo;</span>-->
-<!--                        </a>-->
-<!--                    </li>-->
-<!--                    {{ end }}-->
-<!--                </ul>-->
-<!--            </nav>-->
+            <!--            <nav class="col-12" aria-label="Page navigation">-->
+            <!--                <ul class="pagination justify-content-center">-->
+            <!--                    {{ if $paginator.HasPrev }}-->
+            <!--                    <li class="page-item">-->
+            <!--                        <a class="page-link" href="{{ $paginator.Prev.URL }}" aria-label="Previous">-->
+            <!--                            <span aria-hidden="true">&laquo;</span>-->
+            <!--                        </a>-->
+            <!--                    </li>-->
+            <!--                    {{ end }}-->
+            <!--                    {{ range $paginator.Pagers }}-->
+            <!--                    <li class="page-item {{ if eq . $paginator.PageNumber }}active{{ end }}">-->
+            <!--                        <a class="page-link" href="{{ .URL }}">{{ .PageNumber }}</a>-->
+            <!--                    </li>-->
+            <!--                    {{ end }}-->
+            <!--                    {{ if $paginator.HasNext }}-->
+            <!--                    <li class="page-item">-->
+            <!--                        <a class="page-link" href="{{ $paginator.Next.URL }}" aria-label="Next">-->
+            <!--                            <span aria-hidden="true">&raquo;</span>-->
+            <!--                        </a>-->
+            <!--                    </li>-->
+            <!--                    {{ end }}-->
+            <!--                </ul>-->
+            <!--            </nav>-->
 
-            <div class="container text-center pb-3">
-                <h1 class="display-3">Past Events</h1>
+            <hr>
+
+            <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center mb-4">
+                <h2 class="section-title  mb-5 text-center font-sharp text-fluid-48-110 font-normal">
+                    Past Events</h2>
             </div>
 
-            {{ $pastPaginator := .Paginate .Data.Pages  3 }}
+
+            {{ $pastPaginator := .Paginate .Data.Pages 3 }}
             {{ range $pastPaginator.Pages.ByDate.Reverse }}
             {{ if lt (.Params.date | time.AsTime) now }}
             <div class="col-lg-4 col-sm-6 mb-5">
-                <div class="card border-0">
+                <div class="card border-0 event-card event-card-xl">
                     {{ if .Params.image }}
-                    <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}" class="card-img rounded-lg mb-4">
+                    <div class="mb-4 ratio ratio-1x1 ">
+                        <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}"
+                             class="img-fluid rounded-lg event-img"/>
+                    </div>
                     {{ end }}
-                    <div class="card-body p-0">
+                    <div class="card-body p-0 ">
                         <h3><a href="{{ .Permalink }}" title="{{ .Title }}" class="post-title">{{ .Title }}</a></h3>
-                        <p {{if eq .Params.language "persian" }} class="card-text  fa-lang" {{else}} class="card-text" {{end}}>{{ .Summary }}</p>
+                        <p {{if eq .Params.language "persian" }} class="card-text fa-lang" {{else}} class="card-text"
+                        {{end}}>{{ .Summary }}</p>
                         <p>
                             <span><i class="fas  fa-map-marker"
                                      aria-hidden="true"></i> &nbsp; {{ .Params.location }}</span></br>
@@ -106,6 +115,7 @@
                 </ul>
             </nav>
         </div>
+    </div>
 </section>
 
 {{ end }}

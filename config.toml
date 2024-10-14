@@ -29,9 +29,11 @@ icon_font = "Font Awesome 5 Free"
 ############################# Plugins ##############################
 # CSS Plugins
 [[params.plugins.css]]
+link = "dist/wc.min.css"
+[[params.plugins.css]]
 link = "plugins/bootstrap/bootstrap.min.css"
 [[params.plugins.css]]
-link = "plugins/slick/slick.css"
+link = "plugins/swiper/swiper-bundle.min.css"
 [[params.plugins.css]]
 link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css"
 [[params.plugins.css]]
@@ -39,16 +41,24 @@ link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/brands.mi
 [[params.plugins.css]]
 link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/solid.min.css"
 
-
-# JS Plugins
+## JS Plugins
 [[params.plugins.js]]
-link = "plugins/jQuery/jquery.slim.min.js"
+link = "plugins/bootstrap/bootstrap.bundle.min.js"
 [[params.plugins.js]]
-link = "plugins/bootstrap/bootstrap.min.js"
+link = "plugins/alpinejs/cdn.min.js"
 [[params.plugins.js]]
-link = "plugins/slick/slick.min.js"
-# [[params.plugins.js]]
-# link = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/js/all.min.js"
-# attributes = "crossorigin='anonymous' defer='defer' data-search-pseudo-elements"
+link = "js/hb-sidebar.js"
+#[[params.plugins.js]]
+#link = "js/hb-nav.js"
+[[params.plugins.js]]
+link = "dist/landing/gsap.min.js"
+[[params.plugins.js]]
+link = "dist/landing/ScrollTrigger.min.js"
+[[params.plugins.js]]
+link = "dist/landing/imagesloaded.pkgd.min.js"
+[[params.plugins.js]]
+link = "dist/landing/lenis.min.js"
+[[params.plugins.js]]
+link = "plugins/swiper/swiper-bundle.min.js"
 
 ############################# Pagination ##############################

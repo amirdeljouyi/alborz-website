@@ -8,6 +8,8 @@ image = "images/logo.png" # this image will be used as fallback if a page has no
 # contact form action
 contact_form_action = "https://formspree.io/f/xyyawegj" # contact form works with https://formspree.io
 
+Copyright = "© 2024 | D.I.S.A. Alborz | All rights reserved"
+
 # Type of pages to be rendered with a events view
 blogCategoryType = "category"
 

@@ -24,9 +24,24 @@
 {{ $scripts = $scripts | append (resources.Get .link) }}
 {{ end }}
 {{ end }}
-{{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
+
 {{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
 <script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script>
+
+{{- $js_sidebar := resources.Get "js/hb-sidebar.js" | resources.Minify -}}
+{{- $js_main := resources.Get "js/script.js" | resources.Minify -}}
+{{- $js_landing := resources.Get "dist/landing/index.js" | resources.Minify -}}
+{{- $js_scroll := resources.Get "dist/landing/smoothscroll.js" | resources.Minify -}}
+{{ $js_bundle := slice $js_main $js_landing $js_sidebar  | resources.Concat (printf "js/alborz-%s.min.js" .Lang) }}
+{{- if hugo.IsProduction -}}
+	{{ $js_bundle = $js_bundle | fingerprint "sha256" }}
+{{- end -}}
+  <script
+    defer
+    src="{{ $js_bundle.RelPermalink }}"
+    integrity="{{ $js_bundle.Data.Integrity }}"
+  ></script>
+
 
 <!-- cookie -->
 {{ with site.Params.cookies }}

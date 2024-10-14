@@ -1,173 +1,108 @@
 {{ define "main" }}
 
-<!-- banner -->
 {{ with .Params.banner }}
-<section class="banner">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-10 mx-auto text-center">
-                <h1 class="mb-3">{{ .title | markdownify }}</h1>
-                <p class="mb-4">{{ .content | markdownify }}</p>
-                {{ if .button.enable }}
-                {{ with .button }}
-                <div><a href="{{ .link | safeURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a></div>
-                {{ end }}
-                {{ end }}
+<section class="bg-neutral-100 main-frame">
+    <div class="relative overflow-hidden md:m-10">
+        <div class="container relative z-20 flex h-full items-end justify-center">
+            <h2 class="bg-clip-text first-bg-gr px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-10 md:m mt-10 md:mt-20 text-left">
+                {{ .title | markdownify }}
+            </h2>
 
-                {{with .image}}<img src="{{ . | relURL }}" alt="" class="img-fluid mt-5" width="750px">{{end}}
-            </div>
         </div>
     </div>
-</section>
-{{ end }}
-<!-- /banner -->
-
-<!-- feature -->
-{{ with .Params.feature }}
-{{ if .enable }}
-<section class="section bg-light">
-    <div class="container">
-        <div class="row justify-content-center">
-
-            <div class="col-md-6 align-self-center">
-
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                <ul>
-                    {{ range .feature_item }}
-
-                    <!--  <dt class="col-sm-3">{{ .name | title }}</dt>-->
-                    <li class="col-sm-9 mb-2" style="font-size: 17px">{{ .content | markdownify }}</li>
-
-                    {{ end }}
-                </ul>
-            </div>
-            <div class="col-md-6 align-self-center">
-                {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
-            </div>
-        </div>
-    </div>
-</section>
-{{ end }}
-{{ end }}
-<!-- /feature -->
-
-<!-- events -->
-{{ partial "recent-events.html" . }}
-
-<!-- landing -->
-{{ with .Params.landing }}
-{{ if .enable }}
-{{ range $i,$p := .landing_item }}
-{{if modBool $i 2}}
-<section class="section bg-light">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 order-2 order-md-1">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                <p>{{ .content | markdownify }}</p>
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i
-                        class="fas fa-arrow-right"></i></a>
-                {{ end }}
-                {{ end }}
-            </div>
-            <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-                <div {{if gt (len .images) 1}} class="slider" {{end}}>
-                    {{ range .images }}
-                    <img src="{{ . | relURL }}" alt="" class="img-fluid">
-                    {{ end }}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-{{ else }}
-<section class="section">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-md-6 mb-4 mb-md-0">
-                <div {{if gt (len .images) 1}}class="slider" {{end}}>
-                    {{ range .images }}
-                    <img src="{{ . | relURL }}" alt="" class="img-fluid">
-                    {{ end }}
-                </div>
+    <div class="container pt-10 md:pt-0">
+        <div class="richtext--fullscreen-subtitle px-6 px-20 md:pb-30 theme-light row">
+            <div class="col-md-6">
+                <p class="md:p-6 text-wrap text-balance text-justify">
+                    {{ .content | markdownify }}
+                </p>
             </div>
             <div class="col-md-6">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
+                <div class="row">
+                    <div class="col-md-12 ">
+                        <img class="img-fluid" src="/images/what-is-alborz.svg">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ end }}
+
+{{ with .Params.feature }}
+<section data-theme="Dark" class="bg-black">
+    <div class="relative overflow-hidden">
+        <img alt="" fetchpriority="high" width="1440" height="840"
+             decoding="async" data-nimg="1" class="relative z-10 aspect-16-10 w-full object-cover"
+             style="color: transparent;" src="images/Nowruz.jpg">
+        <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center">
+            <h2 class="bg-clip-text second-bg-gr px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 text-center md:text-left">
+                {{.title}}
+            </h2>
+        </div>
+        <div class="absolute bottom-0 left-0 z-10 h-full w-full bg-gradient-fullscreen-overlay-black"></div>
+    </div>
+    <div class="container pt-20 md:pt-0">
+        <div class="grid grid-cols-1 gap-y-8 px-6 pb-20 md:grid-cols-2 md:gap-x-5 md:gap-y-24 md:px-[12%] md:pb-44">
+            {{ range .feature_item }}
+            <div class="grid-item grid-item--dark">
+                <h5>{{.name }}</h5>
                 <p>{{ .content | markdownify }}</p>
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn-link">{{ .label }} <i
-                        class="fas fa-arrow-right"></i></a>
-                {{ end }}
-                {{ end }}
-            </div>
-        </div>
-    </div>
-</section>
-{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
-<!-- /service -->
-
-<!-- screenshot -->
-{{ with .Params.screenshot }}
-{{ if .enable }}
-<section class="section pb-0">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 mx-auto text-center">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-            </div>
-        </div>
-    </div>
-    {{ with .image }} <img src="{{ . | relURL }}" alt="" class="img-fluid w-100">{{ end }}
-</section>
-{{ end }}
-{{ end }}
-<!-- /screenshot -->
-
-
-{{ partial "instagram-advanced.html" . }}
-
-
-<!-- call to action -->
-{{ with .Params.call_to_action }}
-{{ if .enable }}
-<section class="section pt-0">
-    <div class="container p-4 shadow rounded-lg px-4">
-        <div class="row align-items-center justify-content-center text-center text-md-left">
-            {{ if .image }}
-            <div class="col-lg-4 col-md-5 mb-4 mb-md-0">
-                <img src="{{ .image | relURL }}" alt="" class="img-fluid">
-            </div>
-            <div class="col-lg-5 col-md-6">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
-                {{ end }}
-                {{ end }}
-            </div>
-            {{ else}}
-            <div class="col-md-12 text-center">
-                <h2 class="section-title">{{ .title | markdownify }}</h2>
-                {{with .content }}<p class="mb-4">{{ . | markdownify }}</p>{{ end }}
-                {{ if .button.enable }}
-                {{ with .button }}
-                <a href="{{ .link | relURL }}" title="{{ .label }}" class="btn btn-primary">{{ .label }}</a>
-                {{ end }}
-                {{ end }}
             </div>
             {{ end }}
         </div>
     </div>
 </section>
 {{ end }}
-{{ end }}
-<!-- /call to action -->
+<!-- /feature -->
+
+<!-- events -->
+{{ with .Params.events_by_alborz }}
+<section class="content--padded">
+    <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center m-10">
+        <h2 class="bg-clip-text first-bg-gr px-6 text-fluid-48-110 font-normal leading-tight -tracking-7 text-transparent md:mb-24 text-center md:text-left">
+            {{.title}}</h2>
+    </div>
+    <div class="pb-20">
+        <div class="grid grid-cols-2 gap-y-1 px-6 md:grid-cols-3 xl:grid-cols-5 gap-x-1 sm:gap-x-2 md:gap-x-5 md:gap-y-24"
+             data-grid-second>
+            {{ range .items }}
+            <div class="grid-item grid__img">
+                {{ with .image }} <img src="{{ . | relURL }}"> {{ end }}
+                <div class="grid__caption mt-2">
+                    <h4>{{.title}}</h4>
+                    <p>{{.year}}</p>
+                </div>
+            </div>
+            {{ end }}
+        </div>
+    </div>
+</section>
+{{end}}
+
+{{ partial "recent-events.html" . }}
+<!-- /events -->
+
+{{ with .Params.support }}
+<section data-theme="Light" class="bg-neutral-100">
+    <div class="relative overflow-hidden">
+        <img alt="" fetchpriority="high" width="1440" height="840" decoding="async" data-nimg="1"
+             class="relative z-10 aspect-16-10 w-full object-cover" style="color: transparent;"
+             src="/images/library.jpg">
+        <div class="container relative z-20 flex flex-col h-full align-items-center justify-start self-center mb-4 mt-4">
+            <h2 class="whitespace-normal sixth-bg-gr text-balance bg-clip-text px-2 pb-1 text-fluid-48-110 font-normal text-center leading-tight tracking-tighter text-transparent">
+                {{ .title | markdownify }}
+            </h2>
+        </div>
+        <div class="container relative z-20">
+            <div class="richtext--fullscreen-subtitle text-balance text-wrap px-6 pb-24 md:whitespace-pre md:px-[12%] theme-ligh mb-10">
+                <p>{{ .content | markdownify }}</p>
+            </div>
+        </div>
+    </div>
+</section>
+{{end}}
+
+{{ partial "instagram-advanced.html" . }}
 
 {{ end }}
