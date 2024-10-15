@@ -128,22 +128,22 @@ weight = 1
 
 [[footer_left]]
 name = "Current Board"
-url = "current-board/"
+url = "boards/current-board/"
 weight = 3
 
 [[footer_left]]
 name = "Former Boards"
-url = "former-board/"
+url = "boards/former-board/"
 weight = 4
 
 [[footer_left]]
 name = "Statutes"
-url = "statutes/"
+url = "https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view?usp=sharing"
 weight = 5
 
 [[footer_left]]
 name = "Bylaws"
-url = "bylaws/"
+url = "https://drive.google.com/file/d/12Qr3D_vwmDXxdByfGlcI7HewQZNg3leb/view?usp=sharing"
 weight = 6
 
 [[footer_left]]
