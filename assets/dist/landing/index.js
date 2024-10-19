@@ -52,22 +52,22 @@ const changeColorNavbar = () => {
             start: 'top 60px',
             end: 'bottom 60px',
             onEnter: (self) => {
-                document.querySelectorAll('.nav-link').forEach(function (element) {
+                document.querySelectorAll('.nav-link,.navbar-toggler').forEach(function (element) {
                     element.classList.add('text-white');
                 });
             },
             onEnterBack: (self) => {
-                document.querySelectorAll('.nav-link').forEach(function (element) {
+                document.querySelectorAll('.nav-link,.navbar-toggler').forEach(function (element) {
                     element.classList.add('text-white');
                 });
             },
             onLeave: (self) => {
-                document.querySelectorAll('.nav-link').forEach(function (element) {
+                document.querySelectorAll('.nav-link,.navbar-toggler').forEach(function (element) {
                     element.classList.remove('text-white');
                 });
             },
             onLeaveBack: (self) => {
-                document.querySelectorAll('.nav-link').forEach(function (element) {
+                document.querySelectorAll('.nav-link,.navbar-toggler').forEach(function (element) {
                     element.classList.remove('text-white');
                 });
             },
