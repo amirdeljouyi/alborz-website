@@ -297,6 +297,7 @@
 .nav-item .nav-link {
   font-weight: 300;
 }
+
 @media (min-width: 1200px) {
   .nav-item .nav-link {
     --bs-nav-link-font-size: 20px;
@@ -315,8 +316,26 @@
   }
 }
 
+.navbar-brand {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
 
+  > img {
+    width: 70px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    padding-top: var(--bs-navbar-brand-padding-y);
+    padding-bottom: var(--bs-navbar-brand-padding-y);
+
+    > img {
+      width: 100px;
+    }
+  }
+}
 
 .aspect-16-10 {
-    aspect-ratio: 1.6;
+  aspect-ratio: 1.6;
 }
