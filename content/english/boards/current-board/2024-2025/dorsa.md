@@ -1,8 +1,9 @@
 ---
-name: "Dorsa Mosadeghian"
-image: "images/members/Dorsa.jpg"
-role: "TBA"
 draft: false
-linkedin: ""
+name: Dorsa Mosadeghian
+role: Social Media and Marketing
+linkedin: ''
 weight: 3
---- 
+image: images/members/Dorsa.jpg
+---
+
