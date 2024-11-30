@@ -1,8 +1,9 @@
 ---
-name: "Toranj Ahmadnia"
-image: "images/members/Toranj.jpg"
-role: "TBA"
 draft: false
-linkedin: ""
+name: Toranj Ahmadnia
+role: Vice President and Logistics
+linkedin: ''
 weight: 1
---- 
+image: images/members/Toranj.jpg
+---
+
