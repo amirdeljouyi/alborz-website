@@ -1,8 +1,9 @@
 ---
-name: "Masiha Kharazifard"
-image: "images/members/Masiha.jpg"
-role: "TBA"
 draft: false
-linkedin: ""
+name: Masiha Kharazifard
+role: External Affairs and Secretary
+linkedin: ''
 weight: 5
---- 
+image: images/members/Masiha.jpg
+---
+
