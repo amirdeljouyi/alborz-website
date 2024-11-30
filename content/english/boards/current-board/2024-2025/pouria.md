@@ -1,8 +1,9 @@
 ---
-name: "Pouria Paridar"
-image: "images/members/Pouria.jpg"
-role: "TBA"
 draft: false
-linkedin: ""
+name: Pouria Paridar
+role: Internal Affairs and Logistics
+linkedin: ''
 weight: 6
---- 
+image: images/members/Pouria.jpg
+---
+
