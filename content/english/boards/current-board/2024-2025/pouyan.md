@@ -1,8 +1,9 @@
 ---
-name: "Pouyan Madani"
-image: "images/members/Pouyan.png"
-role: "TBA"
 draft: false
-linkedin: ""
+name: Amirreza (Pouyan) Madani
+role: Treasurer
+linkedin: ''
 weight: 4
---- 
+image: images/members/Pouyan.png
+---
+
