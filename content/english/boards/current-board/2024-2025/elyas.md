@@ -1,8 +1,9 @@
 ---
-name: "Elyas Khorasani"
-image: "images/members/Elyas.jpg"
-role: "TBA"
 draft: false
-linkedin: ""
+name: Elyas Khorasani
+role: President
+linkedin: ''
 weight: 2
---- 
+image: images/members/Elyas.jpg
+---
+
