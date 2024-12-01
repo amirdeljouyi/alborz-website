@@ -65,7 +65,7 @@
             </div>
 
 
-            {{ $pastPaginator := .Paginate .Data.Pages 3 }}
+            {{ $pastPaginator := .Paginate .Data.Pages 6 }}
             {{ range $pastPaginator.Pages.ByDate.Reverse }}
             {{ if lt (.Params.date | time.AsTime) now }}
             <div class="col-lg-4 col-sm-6 mb-5">

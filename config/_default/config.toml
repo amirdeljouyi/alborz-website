@@ -1,8 +1,6 @@
 ######################## default configuration ####################
 baseURL = "alborzdelft.nl"
 title = "Alborz Association"
-# post pagination
-paginate = "6"
 # post excerpt
 summaryLength = "15"
 # google analytics
@@ -18,3 +16,9 @@ mainSections = ["events"]
   [services.disqus]
   # disqus short name
     shortname = ''
+
+
+[pagination]
+  disableAliases = false
+  pagerSize = 6
+  path = 'page'
