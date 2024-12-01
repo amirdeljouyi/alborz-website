@@ -54,14 +54,14 @@
                 <div class="card border-0 event-card event-card-xl">
                     {{ if .Params.video }}
                     <div class="mb-4 ratio ratio-1x1 ">
-                        <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}"
-                             class="img-fluid rounded-lg event-img"/>
-                    </div>
-                    {{ else if .Params.image }}
-                    <div class="mb-4 ratio ratio-1x1 ">
                         <video alt="{{ .Title }}" class="img-fluid rounded-lg event-img">
                             <source src="{{ .Params.image |relURL }}" type="video/mp4"/>
                         </video>
+                    </div>
+                    {{ else if .Params.image }}
+                    <div class="mb-4 ratio ratio-1x1 ">
+                        <img src="{{ .Params.image |relURL }}" alt="{{ .Title }}"
+                             class="img-fluid rounded-lg event-img"/>
                     </div>
                     {{ end }}
                     <div class="card-body p-0 ">
