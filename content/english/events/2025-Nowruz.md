@@ -7,7 +7,7 @@ end_date: '2024-03-21T23:00:00.000Z'
 description: Nowruz - Persian New Year Eve
 location: Lijm & Cultuur, Rotterdamseweg 272, 2628 AT Delft
 event_type: featured
-link: 'https://maps.app.goo.gl/Kn1REoPLgrhThCvx6 '
+link: 'https://alborzdelft.nl/events/2025-nowruz/'
 type: event
 language: english, persian
 ---
