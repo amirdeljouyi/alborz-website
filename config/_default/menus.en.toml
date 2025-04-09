@@ -40,16 +40,22 @@ parent = "association"
 weight = 5
 
 [[main]]
+name = "2024-2025"
+parent = "policy"
+url = "https://drive.google.com/file/d/1OuelDhhioJJD2cvGg3FTBHGh-wuK-d4j/view?usp=sharing"
+weight = 1
+
+[[main]]
 name = "2023-2024"
 parent = "policy"
 url = "https://drive.google.com/file/d/1avUxVeSgiNZQ5oEX9wnPKBGwj2asaRWh/view?usp=sharing"
-weight = 1
+weight = 2
 
 [[main]]
 name = "2022-2023"
 parent = "policy"
 url = "https://drive.google.com/file/d/16UE9rlulg0Amdmg_xEBRX72wtPNFlikP/view?usp=sharing"
-weight = 2
+weight = 3
 
 
 [[main]]

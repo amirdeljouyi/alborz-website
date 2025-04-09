@@ -20,7 +20,7 @@ feature:
   feature_item:
     # feature item loop
     - name : "Solid Foundation"
-      content : "Alborz is built on a strong foundation. You can access our [statutes](https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view), [bylaws](https://drive.google.com/file/d/12Qr3D_vwmDXxdByfGlcI7HewQZNg3leb/view), and [policy](https://drive.google.com/file/d/1avUxVeSgiNZQ5oEX9wnPKBGwj2asaRWh/view)."
+      content : "Alborz is built on a strong foundation. You can access our [statutes](https://drive.google.com/file/d/1CE5unoZKy-xC0PnOIHDvCGLPxkmRNVCP/view), [bylaws](https://drive.google.com/file/d/12Qr3D_vwmDXxdByfGlcI7HewQZNg3leb/view), and [policy](https://drive.google.com/file/d/1OuelDhhioJJD2cvGg3FTBHGh-wuK-d4j/view?usp=sharing)."
       
     - name : "Transparency"
       content : "We maintain full transparency with our members, ensuring open communication at all times."
