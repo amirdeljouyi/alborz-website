@@ -9,7 +9,7 @@ location: Room 2.110, Civil Engineering Faculty, TU Delft
 event_type: featured
 image: /images/events/2025-consulting-job.jpg
 type: event
-language: English
+language: english
 link: https://form.jotform.com/250934035030344
 ---
 انجمن البرز با همکاری hazaosha برگزار می‌کند.
